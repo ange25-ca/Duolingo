@@ -1,5 +1,5 @@
-.nav_container {
+#nav {
     background-color: blueviolet;
-    color: black;
+    color: rgb(36, 14, 164);
     padding: 10px;
 }
