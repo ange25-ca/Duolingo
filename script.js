@@ -7,15 +7,21 @@ document.head.appendChild(cssLink);
 // Se establece el contenedor principal en una variable constante 
 const appContainer = document.getElementById("app");
 
-// Se crea la variable nav_container donde tendra un <div>
-var nav_container = document.createElement("div");
-//El establece que el id del div sera nav
-nav_container.setAttribute("id", "nav");
+// Se crea el navbar
+const navbar = document.createElement("navbar");
+navbar.setAttribute("id", "navbar");
+
+const nav1 = document.createElement("div");
+const nav2 = document.createElement("div");
+
+
+navbar.appendChild(nav1);
+navbar.appendChild(nav2);
 
 //Agrega elementos al contenedor principal
-appContainer.appendChild(nav_container);
+appContainer.appendChild(navbar);
+
 
 //Accedo a div por medio del id
-let nav = document.getElementById("nav");
-nav.innerHTML = "Hola, aqui va el logo de duoling";
-
+nav1.innerHTML = "Hola, aqui va el logo de duoling";
+nav2.innerHTML = '<img src = "CSS/img/logo.png">';
