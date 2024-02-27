@@ -1,28 +1,55 @@
 #navbar{
     background-color: #fff;
-    color: rgb(8, 202, 14);
     display: flex;
     text-align: center;
-    margin-left: 60px;
-    margin-right: 60px;
-    border-style: dashed;
-    border-color: rgb(17, 18, 18);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+#nav1{
+    margin-left: 5rem;
 }
 
 #nav2 {
-    background-color: rgb(0, 255, 89);
     display: flex;
-    margin-left: 200px;
+    font-family: 'Feather Bold';
+    color: #9f9e9e;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    margin-left: 29rem;
 }
+
+#nav3 {
+    margin-top: 0.5rem;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #afafaf;
+    font-weight: bold;
+}
+
 
 #division1{
     text-align: center;
     display: flex;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 #divi1 {
-    width: 5px;
-    height: 5px;
+    display: flex;
 }
+
+#divi2{
+    display: flex;
+    font-weight: bold;
+    font-family: "nunito";
+    color: #4B4B4B;
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding-left: 5rem;
+}
+
