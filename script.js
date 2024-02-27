@@ -27,7 +27,7 @@ navbar.appendChild(nav2);
 navbar.appendChild(nav3);
 
 //Primera división
-const division1 = document.createElement("division1");//Se crea la variable de la primera sección
+var division1 = document.createElement("division1");//Se crea la variable de la primera sección
 division1.setAttribute("id", "division1"); //Se asigna un ID a la variable division1
 
 const divi1 = document.createElement("div");//creación de los div
@@ -36,14 +36,16 @@ divi1.setAttribute("id", "divi1");//Se establece su id
 const divi2 = document.createElement("div");//creación del segundo div
 divi2.setAttribute("id", "divi2");//Se establece su id 
 
-const divi3 = document.createElement("button1"); //creacion del tercero div
-button1.setAttribute("id", "button1"); //Se establece el id
+const divi3 = document.createElement("div"); //creacion del segundo div
+divi3.setAttribute("id", "divi3");
+
+const divi3_1 = document.createElement("div");
+divi3_1.setAttribute("id", "div3_1");
 
 //Se agrega los div a la primera división 
 division1.appendChild(divi1);
 division1.appendChild(divi2);
 division1.appendChild(divi3);
-
 
 //Agrega elementos al contenedor principal
 appContainer.appendChild(navbar);
@@ -57,6 +59,6 @@ nav3.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/
 //Se ingresa el contenido de los div de la primera division 
 divi1.innerHTML = '<img width="500" height="500" align="center" src= "CSS/img/animation2.gif">'; //Gif de entredo
 divi2.innerHTML = '<h1>¡La forma divertida, efectiva y <br> gratis de aprender un idioma!</h1>'; //Texto
-divi3.innerHTML = 'HOLA';
-
+divi3.innerHTML = '<button> Hola <//button>';
+divi3.innerHTML = '<button> Hola 2 </button>';
 
