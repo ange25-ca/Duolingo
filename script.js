@@ -30,18 +30,23 @@ section.setAttribute("id", "section"); //Se asigna un ID a la variable section
 const divi1 = document.createElement("div");
 divi1.setAttribute("id", "divi1");
 
-var divi2 = document.createElement("div");
+var divi2 = document.createElement("div"); //Div general
 divi2.setAttribute("id", "divi2");
 
-const divi2_1 = document.createElement("div"); 
+const divi2_1 = document.createElement("div"); //Texto de bienvenida
 divi2_1.setAttribute("id", "divi2_1");
 
-const divi2_2 = document.createElement("div"); 
+const divi2_2 = document.createElement("div"); //Button de "EMPEZAR AHORA"
 divi2_2.setAttribute("id", "divi2_2"); 
+
+const divi2_3 = document.createElement("div"); //Button de "Tengo una cuenta"
+divi2_3.setAttribute("id", "divi2_3"); 
 
 //Se agrega al div principal (divi2)
 divi2.appendChild(divi2_1);
 divi2.appendChild(divi2_2);
+divi2.appendChild(divi2_3);
+
 
 //Se agrega los div a la primera section 
 section.appendChild(divi1);
@@ -60,8 +65,11 @@ nav3.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/
 //Se ingresa el contenido de los div de la primera section 
 divi1.innerHTML = '<img width="500" height="500" align="center" src= "CSS/img/animation2.gif">'; //Gif de entredo
 divi2_1.innerHTML = '<h1>¡La forma divertida, efectiva y <br> gratis de aprender un idioma!</h1>'; //Texto
-divi2_2.innerHTML = '<button class = button1>EMPIEZA AHORA</button>'
+divi2_2.innerHTML = '<button onclik = "reedireccion()" class = btn>EMPIEZA AHORA</button>' 
+divi2_3.innerHTML = '<button class = btn1>TENGO UNA CUENTA</button>';
 
+
+//DISEÑO DE LA PAGINA
 
 //Se agrega el favicon a la pestaña de navegación
 var style = document.createElement("style");
@@ -123,17 +131,52 @@ document.getElementById("divi2_1").style.paddingRight = "3rem";
 
 document.getElementById("divi2_2").style.marginTop = "2rem";
 
-document.querySelectorAll(".button1").forEach(function(button) {
-    button.style.fontSize = "1rem";
-    button.style.fontFamily = "'Feather Bold'";
-    button.style.color = "#fff";
-    button.style.textAlign = "center";
-    button.style.boxSizing = "border-box";
-    button.style.textTransform = "uppercase";
-    button.style.cursor = "pointer";
-    button.style.backgroundColor = "#58CC02";
-    button.style.borderRadius = "0.6rem";
-    button.style.borderStyle = "none";
-    button.style.width = "15rem";
-    button.style.height = "2.5rem";
+document.querySelectorAll(".btn").forEach(function(btn) {
+    btn.style.fontSize = "1rem";
+    btn.style.fontFamily = "'Feather Bold'";
+    btn.style.color = "#ffff";
+    btn.style.textAlign = "center";
+    btn.style.boxSizing = "border-box";
+    btn.style.textTransform = "uppercase";
+    btn.style.cursor = "pointer";
+    btn.style.backgroundColor = "#58CC02";
+    btn.style.borderRadius = "0.6rem";
+    btn.style.borderStyle = "none";
+    btn.style.width = "15.1rem";
+    btn.style.height = "2.6rem";
+    btn.style.boxShadow = "0.01rem 0.3rem #61B800";
+    //Se agrega la función para el color cuando se posiciona encima del btn
+    btn.addEventListener("mouseover", function(){
+        this.style.backgroundColor = "#61E002";
+    });
+    //Se agrega la función para que regrese el color 
+    btn.addEventListener("mouseout", function() {
+        this.style.backgroundColor = "#58CC02";
+    });
+});
+
+document.querySelectorAll(".btn1").forEach(function(btn1) {
+    btn1.style.marginTop = "1rem";
+    btn1.style.fontSize = "1rem";
+    btn1.style.fontFamily = "'Feather Bold'";
+    btn1.style.color = "#199EDD";
+    btn1.style.textAlign = "center";
+    btn1.style.boxSizing = "border-box";
+    btn1.style.textTransform = "uppercase";
+    btn1.style.cursor = "pointer";
+    btn1.style.backgroundColor = "#ffffff";
+    btn1.style.borderRadius = "0.6rem";
+    btn1.style.borderStyle = "none";
+    btn1.style.width = "15.2rem";
+    btn1.style.height = "2.6rem";
+    btn1.style.boxShadow = "0.02rem 0.08rem 0rem 0.11rem #CFCFCF";
+
+    //Se agrega la función para el color cuando se posiciona encima del btn
+    btn1.addEventListener("mouseover", function(){
+        this.style.backgroundColor = "#E5E5E5";
+    });
+    //Se agrega la función para que regrese el color 
+    btn1.addEventListener("mouseout", function() {
+        this.style.backgroundColor = "#ffffff";
+    });
 });
