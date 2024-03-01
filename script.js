@@ -14,13 +14,9 @@ nav1.setAttribute("id", "nav1");
 const nav2 = document.createElement("div"); 
 nav2.setAttribute("id","nav2");
 
-const nav3 = document.createElement("div");
-nav3.setAttribute("id", "nav3");
-
 //Se agregan los div creados a la variable principal Navbar
 navbar.appendChild(nav1);
 navbar.appendChild(nav2);
-navbar.appendChild(nav3);
 
 //Primera section
 var section = document.createElement("section");//Se crea la variable de la primera sección
@@ -111,15 +107,46 @@ carrusel.appendChild(banderas);
 //Se agrega carrusel a la seccion2
 section2.appendChild(carrusel);
 
+//Tercera section
+var section3 = document.createElement("section3");//Se crea la variable de la tercera sección
+section3.setAttribute("id", "section3");
+
+var divi3 = document.createElement("divi3");
+divi3.setAttribute("id", "divi3");
+
+var divi3_text = document.createElement("divi3_text");
+divi3_text.setAttribute("id", "divi3_text");
+
+var divi3_1 = document.createElement("divi3_1");
+divi3_1.setAttribute("id", "divi3_1");
+
+var divi3_2 = document.createElement("divi3_2");
+divi3_2.setAttribute("id", "divi3_2");
+
+var divi3_3 = document.createElement("divi3_3");
+divi3_3.setAttribute("id", "divi3_3");
+
+//Se agrega los textos al div_text
+divi3_text.appendChild(divi3_1);
+divi3_text.appendChild(divi3_2);
+
+//Se agrega los div al div principal
+divi3.appendChild(divi3_text);
+divi3.appendChild(divi3_3);
+
+//Se agrega el div general a la section
+section3.appendChild(divi3);
+
 //Agrega elementos al contenedor principal
 appContainer.appendChild(navbar);
 appContainer.appendChild(section);
 appContainer.appendChild(section2);
+appContainer.appendChild(section3);
 
 //Se ingresa el contenido de los div del navbar
 nav1.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg">';
-nav2.innerHTML = '<a id = "idioma" href = ""> IDIOMA DE LA PÁGINA: ESPAÑOL</a>';
-nav3.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/c6eae48dd48246c89e415b89f9e55282.svg">';
+nav2.innerHTML = '<a id = "idioma" href = ""> IDIOMA DE LA PÁGINA: ESPAÑOL <img style = "width: 1rem ; height: 0.8rem;" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/c6eae48dd48246c89e415b89f9e55282.svg"></a>';
+
 
 //Se ingresa el contenido de los div de la primera section 
 divi1.innerHTML = '<img width="500" height="500" align="center" src= "CSS/img/animation2.gif">'; //Gif de entredo
@@ -141,6 +168,11 @@ bandera8.innerHTML = '<nav><a class="sueco" href="/course/sv/es/Aprender-sueco">
 flechaizq.innerHTML = '<nav id = "arrow-wreapper"><span class = "arrow-prev"></span>&#10094</nav>';
 flechader.innerHTML = '<nav id = "flechader"><span class = "arrow-nex"></span>&#10095</nav>';
 
+// Se inserta el contenido de los div de la tercera section
+divi3_1.innerHTML = '<p>divertido, efectivo y <br> gratis</p>';
+divi3_2.innerHTML = '<p>Aprender con Duolingo es divertido y <a id = "modi">los estudios demuestran que funciona.</a>¡En nuestras lecciones cortas ganarás puntos y habilitarás nuevas unidades al mismo tiempo que desarrollas tus habilidades de comunicación en la vida real!</p>';
+divi3_3.innerHTML = '<p>FOTO</p>';
+
 //DISEÑO DE LA PAGINA
 
 //Se agrega el favicon a la pestaña de navegación
@@ -150,6 +182,8 @@ style.string = "text/css";
 style.textContent = `
     @import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
     @import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap); 
+    @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Signika+Negative:wght@300..700&display=swap')
 `;
 //Se accede directamente al head del HTML
 var head = document.head ;
@@ -164,27 +198,28 @@ document.querySelectorAll("navbar").forEach(function(navbar){
     
     navbar.style.backgroundColor = "#fff";
     navbar.style.display = "flex";
-    navbar.style.textAlign = "center";
+    navbar.style.marginTop = "0.7rem";
+    navbar.style.paddingLeft = "3rem";
+    navbar.style.paddingRight = "3rem";
     navbar.style.marginLeft = "5rem";
     navbar.style.marginRight = "5rem";
-    navbar.style.marginTop = "2rem";
-
-    nav1.style.marginLeft = "5rem";
+    navbar.style.justifyContent = "space-between";
 
     nav2.style.display = "flex";
-    nav2.style.fontFamily = "'Feather Bold'";
+    nav2.style.textAlign = "right";
+    nav2.style.fontFamily = 'Madimi One';
+    nav2.style.fontWeight = "bold";
     nav2.style.color = "#9f9e9e";
-    nav2.style.fontSize = "0.9rem";
+    nav2.style.fontSize = "0.88rem";
+    nav2.style.letterSpacing = "0.02rem"; 
     nav2.style.padding = "0.6rem";
-    nav2.style.marginLeft = "29rem";
 
-document.getElementById("nav3").style.marginTop = "0.5rem";
-});
+    idioma.style.textDecoration = "none";
+    idioma.style.color = "#afafaf";
+    idioma.style.fontWeight = "bold";
 
-document.querySelectorAll("a").forEach(function(link) {
-    link.style.textDecoration = "none";
-    link.style.color = "#afafaf";
-    link.style.fontWeight = "bold";
+    navbar.style.borderStyle = "double";
+
 });
 
 //Primera seccion
@@ -197,18 +232,20 @@ document.querySelectorAll("section").forEach(function(section){
     section.style.marginRight = "5rem";
 
     divi2.style.textAlign = "center";
-    divi2.style.marginLeft = "9rem";
+    divi2.style.marginLeft = "2.5rem";
 
-    divi2_1.style.fontWeight = "bold";
-    divi2_1.style.fontFamily = "nunito";
+    divi2_1.style.fontFamily = "'nunito'";
     divi2_1.style.color = "#4B4B4B";
     divi2_1.style.textAlign = "left";
-    divi2_1.style.fontSize = "0.7rem";
-    divi2_1.style.marginTop = "6.5rem";
+    divi2_1.style.fontSize = "1.2rem";
+    divi2_1.style.marginTop = "9.2rem";
     divi2_1.style.paddingLeft = "3rem";
-    divi2_1.style.paddingRight = "3rem";
+    divi2_1.style.paddingRight = "2rem";
 
-    divi2_2.style.marginTop = "2rem";
+    divi2_2.style.marginTop = "3.1rem";
+    divi2_2.style.marginLeft = "2rem";
+
+    divi2_3.style.marginLeft = "2rem";
 });
 
 document.querySelectorAll(".btn").forEach(function(btn) {
@@ -222,7 +259,7 @@ document.querySelectorAll(".btn").forEach(function(btn) {
     btn.style.backgroundColor = "#58CC02";
     btn.style.borderRadius = "0.6rem";
     btn.style.borderStyle = "none";
-    btn.style.width = "15.1rem";
+    btn.style.width = "20.7rem";
     btn.style.height = "2.6rem";
     btn.style.boxShadow = "0.01rem 0.3rem #61B800";
     //Se agrega la función para el color cuando se posiciona encima del btn
@@ -247,7 +284,7 @@ document.querySelectorAll(".btn1").forEach(function(btn1) {
     btn1.style.backgroundColor = "#ffffff";
     btn1.style.borderRadius = "0.6rem";
     btn1.style.borderStyle = "none";
-    btn1.style.width = "15.2rem";
+    btn1.style.width = "20.7rem";
     btn1.style.height = "2.6rem";
     btn1.style.boxShadow = "0.02rem 0.08rem 0rem 0.11rem #CFCFCF";
 
@@ -267,6 +304,7 @@ document.querySelectorAll("section2").forEach(function(section2){
     banderas.style.width = "67.7rem";
     banderas.style.height = "5rem";
     banderas.style.position = "relative";
+    banderas.style.textDecoration = "none"; 
 
     inglestext.style.color = "#777777";
     francestext.style.color = "#777777";
@@ -294,4 +332,51 @@ document.querySelectorAll("section2").forEach(function(section2){
     flechaizq.style.color = "#AFAFAF";
     flechaizq.style.cursor = "pointer";
 
+});
+
+document.querySelectorAll("section3").forEach(function(section3) {
+
+    section3.style.borderStyle = "double";
+    section3.style.display = "flex";
+    section3.style.marginLeft = "5rem";
+    section3.style.marginRight = "5rem";
+    section3.style.overflow = "visible";
+
+    divi3.style.textAlign = "center";
+    divi3.style.display = "flex";
+    divi3.style.marginLeft = "1rem";
+    divi3.style.borderStyle = "double";
+    divi3.style.borderColor = "red";
+
+    divi3_1.style.display = "flex";
+    divi3_1.style.fontWeight = "bold";
+    divi3_1.style.fontFamily = "'Feather Bold'";
+    divi3_1.style.color = "#58CC02";
+    divi3_1.style.textAlign = "left";
+    divi3_1.style.fontSize = "3.5rem";
+    divi3_1.style.marginTop = "3.5rem";
+    divi3_1.style.marginLeft = "3rem";
+    divi3_1.style.paddingRight = "3rem";
+
+    divi3_2.style.display = "flex";
+    divi3_2.style.marginTop = "-4rem";
+    divi3_2.style.marginLeft = "3rem";
+    divi3_2.style.marginRight = "9rem";
+    divi3_2.style.fontSize = "1.2rem";
+    divi3_2.style.textAlign = "left";
+    divi3_2.style.textAlign = "justify";
+    divi3_2.style.color = "#777777";
+    divi3_2.style.fontFamily = "'nunito'";
+    divi3_2.style.fontWeight = "bold";
+    divi3_2.style.borderStyle = "solid";
+    divi3_2.style.borderColor = "pink";
+
+    divi3_3.style.display = "flex";
+    divi3_3.style.display = "inlinebox";
+    divi3_3.style.marginLeft = "8rem";
+    divi3_3.style.marginRight = "8rem";
+    divi3_3.style.borderStyle = "solid";
+    divi3_3.style.borderColor = "yellow";
+
+    modi.style.color = "#1CB0F6";
 });
