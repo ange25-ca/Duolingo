@@ -285,6 +285,40 @@ divi8.appendChild(divi8_text);
 //Se agrega el div a la seccion
 section8.appendChild(divi8);
 
+//Novena section
+var section9 = document.createElement("section9");//Se crea la variable de la novena sección
+section9.setAttribute("id", "section9");
+
+var divi9 = document.createElement("divi9");
+divi9.setAttribute("id", "divi9");
+
+var divi9_text = document.createElement("divi9_text");
+divi9_text.setAttribute("id", "divi9_text");
+
+var divi9_1 = document.createElement("divi9_1");
+divi9_1.setAttribute("id", "divi9_1");
+
+var divi9_2 = document.createElement("divi9_2");
+divi9_2.setAttribute("id", "divi9_2");
+
+var divi9_3 = document.createElement("divi9_3");
+divi9_3.setAttribute("id", "divi9_3");
+
+var divi9_4 = document.createElement("divi9_4");
+divi9_4.setAttribute("id", "divi9_4");
+
+//Se agrega los textos al div_text
+divi9_text.appendChild(divi9_1);
+divi9_text.appendChild(divi9_2);
+divi9_text.appendChild(divi9_3);
+
+//Se agrega los div al div principal
+divi9.appendChild(divi9_text);
+divi9.appendChild(divi9_4);
+
+//Se agrega el div general a la section
+section9.appendChild(divi9);
+
 
 //Agrega elementos al contenedor principal
 appContainer.appendChild(navbar);
@@ -296,6 +330,8 @@ appContainer.appendChild(section5);
 appContainer.appendChild(section6);
 appContainer.appendChild(section7);
 appContainer.appendChild(section8);
+appContainer.appendChild(section8);
+appContainer.appendChild(section9);
 
 //Se ingresa el contenido de los div del navbar
 nav1.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg">';
@@ -348,6 +384,12 @@ divi7_btn2.innerHTML = '<button class = >TENGO UNA CUENTA</button>';
 //Se inserta el contenido de los div de la octava seccion
 divi8_1.innerHTML = '<p>FOTO</p>';
 divi8_3.innerHTML = '<nav><a class = "superduo"><img id="SuperDuolingo" height="55" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" width="339"></a></nav>';
+
+// Se inserta el contenido de los div de la tercera section
+divi9_1.innerHTML = '<p>duolingo english test</p>';
+divi9_2.innerHTML = '<p>Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en la ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el examen y que puedan dar lo mejor de sí.</p>';
+divi9_3.innerHTML = '<p>button</p>';
+divi9_4.innerHTML = '<p>Imagen</p>';
 
 //DISEÑO DE LA PAGINA
 //Se agrega el favicon a la pestaña de navegación
@@ -735,6 +777,7 @@ document.querySelectorAll("section7").forEach(function(section7) {
 
 });
 
+//Style para section 8
 document.querySelectorAll("section8").forEach(function(section8) {
 
     section8.style.borderStyle = "double";
@@ -764,3 +807,96 @@ document.querySelectorAll("section8").forEach(function(section8) {
     divi8_text.style.marginRight = "1rem";
 });
 
+//Style para section 9
+document.querySelectorAll("section9").forEach(function(section9) {
+
+    //section9.style.borderStyle = "double";
+    //section9.style.display = "flex";
+    //section9.style.marginLeft = "5rem";
+    //section9.style.marginRight = "5rem";
+    //section9.style.overflow = "visible";
+
+    //divi9_text.style.textAlign = "center";
+    //divi9_text.style.display = "block";
+    //divi9_text.style.marginLeft = "2rem";
+    //divi9_text.style.borderStyle = "double";
+    //divi9_text.style.borderColor = "orange";
+
+    //divi9_1.style.display = "flex";
+    //divi9_1.style.fontWeight = "bold";
+    //divi9_1.style.fontFamily = "'Feather Bold'";
+    //divi9_1.style.color = "#58CC02";
+    //divi9_1.style.textAlign = "left";
+    //divi9_1.style.fontSize = "3.2rem";
+    //divi9_1.style.marginTop = "3.5rem";
+    //divi9_1.style.marginLeft = "12.5rem";
+    //divi9_1.style.paddingRight = "3rem";
+    //divi9_1.style.display = "block";
+
+    //divi9_2.style.display = "block";
+    //divi9_2.style.borderStyle = "solid";
+    //divi9_2.style.borderColor = "yellow";
+
+    //divi9_3.style.textAlign = "center";
+    //divi9_3.style.display = "flex";
+    //divi9_3.style.marginLeft = "2rem";
+    //divi9_3.style.borderStyle = "double";
+    //divi9_3.style.borderColor = "orange";
+
+
+
+    //divi9_4.style.display = "flex";
+    //divi9_4.style.marginLeft = "12.5rem";
+    //divi9_4.style.marginRight = "5rem";
+    //divi9_4.style.fontSize = "0.9rem";
+    //divi9_4.style.textAlign = "left";
+    //divi9_4.style.textAlign = "justify";
+    //divi9_4.style.color = "#777777";
+    //divi9_4.style.fontFamily = "'nunito'";
+    //divi9_4.style.fontWeight = "bold";
+    //divi9_4.style.borderStyle = "solid";
+    //divi9_4.style.borderColor = "pink";
+
+    section9.style.borderStyle = "double";
+    section9.style.display = "flex";
+    section9.style.marginLeft = "5rem";
+    section9.style.marginRight = "5rem";
+    section9.style.overflow = "visible";
+
+    divi9.style.textAlign = "center";
+    divi9.style.display = "flex";
+    divi9.style.marginLeft = "1rem";
+    divi9.style.borderStyle = "double";
+    divi9.style.borderColor = "red";
+
+    divi9_1.style.display = "flex";
+    divi9_1.style.fontWeight = "bold";
+    divi9_1.style.fontFamily = "'Feather Bold'";
+    divi9_1.style.color = "#58CC02";
+    divi9_1.style.textAlign = "left";
+    divi9_1.style.fontSize = "3.5rem";
+    divi9_1.style.marginTop = "3.5rem";
+    divi9_1.style.marginLeft = "3rem";
+    divi9_1.style.paddingRight = "3rem";
+
+    divi5_2.style.display = "flex";
+    divi5_2.style.marginTop = "-4rem";
+    divi5_2.style.marginLeft = "3rem";
+    divi5_2.style.marginRight = "9rem";
+    divi5_2.style.fontSize = "1.2rem";
+    divi5_2.style.textAlign = "left";
+    divi5_2.style.textAlign = "justify";
+    divi5_2.style.color = "#777777";
+    divi5_2.style.fontFamily = "'nunito'";
+    divi5_2.style.fontWeight = "bold";
+    divi5_2.style.borderStyle = "solid";
+    divi5_2.style.borderColor = "pink";
+
+    divi5_3.style.display = "flex";
+    divi5_3.style.display = "inlinebox";
+    divi5_3.style.marginLeft = "8rem";
+    divi5_3.style.marginRight = "8rem";
+    divi5_3.style.borderStyle = "solid";
+    divi5_3.style.borderColor = "yellow";
+
+});
