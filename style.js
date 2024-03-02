@@ -26,6 +26,7 @@ document.querySelectorAll("navbar").forEach(function(navbar){
     navbar.style.position = "fixed";
     navbar.style.display = "flex";
     navbar.style.top = "0";
+    nav1.style.zindex = "10000";
     navbar.style.width = "100%";
 
     nav.style.height = "5rem";
@@ -82,6 +83,7 @@ document.querySelectorAll("section").forEach(function(section){
     divi2_3.style.marginLeft = "2rem";
 });
 
+
 document.querySelectorAll(".btn").forEach(function(btn) {
     btn.style.fontSize = "1rem";
     btn.style.fontFamily = "'Feather Bold'";
@@ -105,6 +107,7 @@ document.querySelectorAll(".btn").forEach(function(btn) {
         this.style.backgroundColor = "#58CC02";
     });
 });
+
 
 document.querySelectorAll(".btn1").forEach(function(btn1) {
     btn1.style.marginTop = "1rem";
@@ -131,6 +134,7 @@ document.querySelectorAll(".btn1").forEach(function(btn1) {
         this.style.backgroundColor = "#ffffff";
     });
 });
+
 
 //Style para la section 2
 document.querySelectorAll("section2").forEach(function(section2){
@@ -160,7 +164,6 @@ document.querySelectorAll("section2").forEach(function(section2){
     banderas.style.textDecoration = "none"; 
     banderas.style.width = "67.7rem";
     banderas.style.height = "5rem";
-    banderas.style.position = "relative";
 
     flechader.style.color  = "#AFAFAF";
     flechader.style.cursor = "pointer";
@@ -607,3 +610,4 @@ document.querySelectorAll("section12").forEach(function(section12) {
     divi12_3.style.borderColor = "pink";
 
 });
+

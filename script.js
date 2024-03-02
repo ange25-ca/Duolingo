@@ -449,7 +449,7 @@ nav2.innerHTML = '<a id = "idioma" href = ""> IDIOMA DE LA PÁGINA: ESPAÑOL <im
 //Se ingresa el contenido de los div de la primera section 
 divi1.innerHTML = '<img width="500" height="500" align="center" src= "CSS/img/animation2.gif">'; //Gif de entredo
 divi2_1.innerHTML = '<h1>¡La forma divertida, efectiva y <br> gratis de aprender un idioma!</h1>'; //Texto
-divi2_2.innerHTML = '<button onclik = "reedireccion()" class = btn>EMPIEZA AHORA</button>' 
+divi2_2.innerHTML = '<button onclik = "reedireccion()" class = btn>EMPIEZA AHORA</button>' ;
 divi2_3.innerHTML = '<button class = btn1>TENGO UNA CUENTA</button>';
 
 //Se agrega el contenido de los div de la segunda section
