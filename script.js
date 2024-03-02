@@ -4,8 +4,11 @@
 const appContainer = document.getElementById("app");
 
 // Se crea la variable para el Navbar
-const navbar = document.createElement("navbar"); 
+var navbar = document.createElement("navbar"); 
 navbar.setAttribute("id", "navbar"); 
+
+const nav = document.createElement("nav");
+navbar.setAttribute("id", "nav");
 
 //Contenido del navbar
 const nav1 = document.createElement("div");
@@ -15,8 +18,10 @@ const nav2 = document.createElement("div");
 nav2.setAttribute("id","nav2");
 
 //Se agregan los div creados a la variable principal Navbar
-navbar.appendChild(nav1);
-navbar.appendChild(nav2);
+nav.appendChild(nav1);
+nav.appendChild(nav2);
+
+navbar.appendChild(nav);
 
 //Primera section
 var section = document.createElement("section");//Se crea la variable de la primera sección
@@ -319,6 +324,107 @@ divi9.appendChild(divi9_4);
 //Se agrega el div general a la section
 section9.appendChild(divi9);
 
+//Decima section
+var section10 = document.createElement("section10");//Se crea la variable de la cuarta sección
+section10.setAttribute("id", "section10");
+
+var divi10 = document.createElement("divi10");
+divi10.setAttribute("id", "divi10");
+
+var divi10_1 = document.createElement("divi10_1");
+divi10_1.setAttribute("id", "divi10_1");
+
+var divi10_text = document.createElement("divi10_text");
+divi10_text.setAttribute("id", "divi10_text");
+
+var divi10_2 = document.createElement("divi10_2");
+divi10_2.setAttribute("id", "divi10_2");
+
+var divi10_3 = document.createElement("divi10_3");
+divi10_3.setAttribute("id", "divi10_3");
+
+var divi10_btn = document.createElement("divi10_btn");
+divi10_btn.setAttribute("id", "divi10_btn");
+
+//Se agrega los textos al div_text
+divi10_text.appendChild(divi10_2);
+divi10_text.appendChild(divi10_3);
+divi10_text.appendChild(divi10_btn);
+
+//Se agrega los div al div principal
+divi10.appendChild(divi10_1);
+divi10.appendChild(divi10_text);
+
+//Se agrega el div general a la section
+section10.appendChild(divi10);
+
+//Se crea la variable para la section onceava
+var section11 = document.createElement("section11");//Se crea la variable de la tercera sección
+section11.setAttribute("id", "section11");
+
+var divi11 = document.createElement("divi11");
+divi11.setAttribute("id", "divi11");
+
+var divi11_text = document.createElement("divi11_text");
+divi11_text.setAttribute("id", "divi11_text");
+
+var divi11_1 = document.createElement("divi11_1");
+divi11_1.setAttribute("id", "divi11_1");
+
+var divi11_2 = document.createElement("divi11_2");
+divi11_2.setAttribute("id", "divi11_2");
+
+var divi11_3 = document.createElement("divi11_3");
+divi11_3.setAttribute("id", "divi11_3");
+
+var divi11_btn = document.createElement("divi11_btn");
+divi11_btn.setAttribute("id", "divi11_btn");
+
+//Se agrega los textos al div_text
+divi11_text.appendChild(divi11_1);
+divi11_text.appendChild(divi11_2);
+divi11_text.appendChild(divi11_btn);
+
+//Se agrega los div al div principal
+divi11.appendChild(divi11_text);
+divi11.appendChild(divi11_3);
+
+//Se agrega el div general a la section
+section11.appendChild(divi11);
+
+//Doceava section
+var section12 = document.createElement("section12");//Se crea la variable de la cuarta sección
+section12.setAttribute("id", "section12");
+
+var divi12 = document.createElement("divi12");
+divi12.setAttribute("id", "divi12");
+
+var divi12_1 = document.createElement("divi12_1");
+divi12_1.setAttribute("id", "divi12_1");
+
+var divi12_text = document.createElement("divi12_text");
+divi12_text.setAttribute("id", "divi12_text");
+
+var divi12_2 = document.createElement("divi12_2");
+divi12_2.setAttribute("id", "divi12_2");
+
+var divi12_3 = document.createElement("divi12_3");
+divi12_3.setAttribute("id", "divi12_3");
+
+var divi12_btn = document.createElement("divi12_btn");
+divi12_btn.setAttribute("id", "divi12_btn");
+
+//Se agrega los textos al div_text
+divi12_text.appendChild(divi12_2);
+divi12_text.appendChild(divi12_3);
+divi12_text.appendChild(divi12_btn);
+
+//Se agrega los div al div principal
+divi12.appendChild(divi12_1);
+divi12.appendChild(divi12_text);
+
+//Se agrega el div general a la section
+section12.appendChild(divi12);
 
 //Agrega elementos al contenedor principal
 appContainer.appendChild(navbar);
@@ -332,6 +438,9 @@ appContainer.appendChild(section7);
 appContainer.appendChild(section8);
 appContainer.appendChild(section8);
 appContainer.appendChild(section9);
+appContainer.appendChild(section10);
+appContainer.appendChild(section11);
+appContainer.appendChild(section12);
 
 //Se ingresa el contenido de los div del navbar
 nav1.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg">';
@@ -366,7 +475,7 @@ divi4_1.innerHTML = '<p>Foto</p>';
 divi4_2.innerHTML = '<p>respaldado por la ciencia<p>';
 divi4_3.innerHTML = '<p>Gracias a la combinación de métodos de enseñanza respaldados por la ciencia y un contenido entretenido, creamos cursos que enseñan de forma eficiente a leer, escribir, entender y hablar en otros idiomas.</p>';
 
-// Se inserta el contenido de los div de la tercera section
+// Se inserta el contenido de los div de la quinta section
 divi5_1.innerHTML = '<p>mantén tu <br> motivación</p>';
 divi5_2.innerHTML = '<p>Nuestras funcionalidades y desafíos son divertidos y hacen que aprender se sienta como un juego. ¡Vas a poder formar un hábito de aprendizaje sin esfuerzo! Y, por supuesto, recibirás recordatorios de nuestra adorable mascota, Duo, el búho.</p>';
 divi5_3.innerHTML = '<p>FOTO</p>';
@@ -385,518 +494,27 @@ divi7_btn2.innerHTML = '<button class = >TENGO UNA CUENTA</button>';
 divi8_1.innerHTML = '<p>FOTO</p>';
 divi8_3.innerHTML = '<nav><a class = "superduo"><img id="SuperDuolingo" height="55" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" width="339"></a></nav>';
 
-// Se inserta el contenido de los div de la tercera section
+// Se inserta el contenido de los div de la novena section
 divi9_1.innerHTML = '<p>duolingo english test</p>';
 divi9_2.innerHTML = '<p>Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en la ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el examen y que puedan dar lo mejor de sí.</p>';
 divi9_3.innerHTML = '<p>button</p>';
 divi9_4.innerHTML = '<p>Imagen</p>';
 
-//DISEÑO DE LA PAGINA
-//Se agrega el favicon a la pestaña de navegación
-var style = document.createElement("style");
-style.string = "text/css";
+//Se inserta el contenido de la decima section
+divi10_1.innerHTML = '<p>Foto</p>';
+divi10_2.innerHTML = '<p>duolingo for schools<p>';
+divi10_3.innerHTML = '<p>Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.</p>';
+divi10_btn.innerHTML = '<p>BOTÓN</p>';
+
+// Se inserta el contenido de los div de la onceava section
+divi11_1.innerHTML = '<p>duolingo abc</p>';
+divi11_2.innerHTML = '<p>¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética y cuentos divertidos, Duolingo ABC enseña a niños y niñas de entre 3 y 8 años a leer y escribir… ¡y es totalmente gratis!</p>';
+divi11_btn.innerHTML = '<p>BOTÓN</p>';
+divi11_3.innerHTML = '<p>FOTO</p>';
+
+//Se inserta el contenido de los div de la doceava section
+divi12_1.innerHTML = '<p>Foto</p>';
+divi12_2.innerHTML = '<p>duolingo for schools<p>';
+divi12_3.innerHTML = '<p>Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.</p>';
+divi12_btn.innerHTML = '<p>BOTÓN</p>';
 
-//Importacion de tipos de fuente
-style.textContent = `
-    @import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
-    @import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap); 
-    @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap')
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Signika+Negative:wght@300..700&display=swap')
-`;
-
-//Se accede directamente al head del HTML
-var head = document.head ;
-
-//Se agrega el style con las letras importadas
-head.appendChild(style);
-
-
-//Estilos de los elemtos por su ID
-
-
-//Style para el navbar
-document.querySelectorAll("navbar").forEach(function(navbar){
-    
-    navbar.style.backgroundColor = "#fff";
-    navbar.style.display = "flex";
-    navbar.style.marginTop = "0.7rem";
-    navbar.style.marginLeft = "5rem";
-    navbar.style.marginRight = "5rem";
-    navbar.style.justifyContent = "space-between";
-    navbar.style.position = "relative";
-    navbar.style.padding = "1rem 1rem";
-
-    nav2.style.display = "flex";
-    nav2.style.textAlign = "right";
-    nav2.style.fontFamily = 'Madimi One';
-    nav2.style.fontWeight = "bold";
-    nav2.style.color = "#9f9e9e";
-    nav2.style.fontSize = "0.88rem";
-    nav2.style.letterSpacing = "0.02rem"; 
-    nav2.style.padding = "0.6rem";
-
-    idioma.style.textDecoration = "none";
-    idioma.style.color = "#afafaf";
-    idioma.style.fontWeight = "bold";
-
-    navbar.style.borderStyle = "double";
-
-});
-
-//Primera seccion
-document.querySelectorAll("section").forEach(function(section){
-
-    section.style.textAlign = "left";
-    section.style.borderStyle = "double";
-    section.style.display = "flex";
-    section.style.marginLeft = "5rem";
-    section.style.marginRight = "5rem";
-
-    divi2.style.textAlign = "center";
-    divi2.style.marginLeft = "2.5rem";
-
-    divi2_1.style.fontFamily = "'nunito'";
-    divi2_1.style.color = "#4B4B4B";
-    divi2_1.style.textAlign = "left";
-    divi2_1.style.fontSize = "1.2rem";
-    divi2_1.style.marginTop = "9.2rem";
-    divi2_1.style.paddingLeft = "3rem";
-    divi2_1.style.paddingRight = "2rem";
-
-    divi2_2.style.marginTop = "3.1rem";
-    divi2_2.style.marginLeft = "2rem";
-
-    divi2_3.style.marginLeft = "2rem";
-});
-
-document.querySelectorAll(".btn").forEach(function(btn) {
-    btn.style.fontSize = "1rem";
-    btn.style.fontFamily = "'Feather Bold'";
-    btn.style.color = "#ffff";
-    btn.style.textAlign = "center";
-    btn.style.boxSizing = "border-box";
-    btn.style.textTransform = "uppercase";
-    btn.style.cursor = "pointer";
-    btn.style.backgroundColor = "#58CC02";
-    btn.style.borderRadius = "0.6rem";
-    btn.style.borderStyle = "none";
-    btn.style.width = "20.7rem";
-    btn.style.height = "2.6rem";
-    btn.style.boxShadow = "0.01rem 0.3rem #61B800";
-    //Se agrega la función para el color cuando se posiciona encima del btn
-    btn.addEventListener("mouseover", function(){
-        this.style.backgroundColor = "#61E002";
-    });
-    //Se agrega la función para que regrese el color 
-    btn.addEventListener("mouseout", function() {
-        this.style.backgroundColor = "#58CC02";
-    });
-});
-
-document.querySelectorAll(".btn1").forEach(function(btn1) {
-    btn1.style.marginTop = "1rem";
-    btn1.style.fontSize = "1rem";
-    btn1.style.fontFamily = "'Feather Bold'";
-    btn1.style.color = "#199EDD";
-    btn1.style.textAlign = "center";
-    btn1.style.boxSizing = "border-box";
-    btn1.style.textTransform = "uppercase";
-    btn1.style.cursor = "pointer";
-    btn1.style.backgroundColor = "#ffffff";
-    btn1.style.borderRadius = "0.6rem";
-    btn1.style.borderStyle = "none";
-    btn1.style.width = "20.7rem";
-    btn1.style.height = "2.6rem";
-    btn1.style.boxShadow = "0.02rem 0.08rem 0rem 0.11rem #CFCFCF";
-
-    //Se agrega la función para el color cuando se posiciona encima del btn
-    btn1.addEventListener("mouseover", function(){
-        this.style.backgroundColor = "#E5E5E5";
-    });
-    //Se agrega la función para que regrese el color 
-    btn1.addEventListener("mouseout", function() {
-        this.style.backgroundColor = "#ffffff";
-    });
-});
-
-//Style para la section 2
-document.querySelectorAll("section2").forEach(function(section2){
-    
-    inglestext.style.color = "#777777";
-    francestext.style.color = "#777777";
-    alemantext.style.color = "#777777";
-    italianotext.style.color = "#777777";
-    francestext.style.color = "#777777";
-    portutext.style.color = "#777777";
-    catalantext.style.color = "#777777";
-    rusotext.style.color = "#777777";
-    suecotext.style.color = "#777777";
-
-    banderas.style.display = "flex";
-    banderas.style.textAlign = "center";
-    banderas.style.alignItems = "center";
-    banderas.style.borderStyle = "double";
-    banderas.style.flexGrow = "1";
-    banderas.style.flexBasis = "0";
-    banderas.style.letterSpacing = "0.001rem";
-    banderas.style.marginLeft = "5rem";
-    banderas.style.marginRight = "5rem";
-    banderas.style.gap = "1.5rem";
-    banderas.style.fontFamily = "nunito";
-    banderas.style.fontWeight = "bold";
-    banderas.style.textDecoration = "none"; 
-    banderas.style.width = "67.7rem";
-    banderas.style.height = "5rem";
-    banderas.style.position = "relative";
-
-    flechader.style.color  = "#AFAFAF";
-    flechader.style.cursor = "pointer";
-    flechaizq.style.color = "#AFAFAF";
-    flechaizq.style.cursor = "pointer";
-
-});
-
-//Style para la section 3
-document.querySelectorAll("section3").forEach(function(section3) {
-
-    section3.style.borderStyle = "double";
-    section3.style.display = "flex";
-    section3.style.marginLeft = "5rem";
-    section3.style.marginRight = "5rem";
-    section3.style.overflow = "visible";
-
-    divi3.style.textAlign = "center";
-    divi3.style.display = "flex";
-    divi3.style.marginLeft = "1rem";
-    divi3.style.borderStyle = "double";
-    divi3.style.borderColor = "red";
-
-    divi3_1.style.display = "flex";
-    divi3_1.style.fontWeight = "bold";
-    divi3_1.style.fontFamily = "'Feather Bold'";
-    divi3_1.style.color = "#58CC02";
-    divi3_1.style.textAlign = "left";
-    divi3_1.style.fontSize = "3.5rem";
-    divi3_1.style.marginTop = "3.5rem";
-    divi3_1.style.marginLeft = "3rem";
-    divi3_1.style.paddingRight = "3rem";
-
-    divi3_2.style.display = "flex";
-    divi3_2.style.marginTop = "-4rem";
-    divi3_2.style.marginLeft = "3rem";
-    divi3_2.style.marginRight = "9rem";
-    divi3_2.style.fontSize = "1.2rem";
-    divi3_2.style.textAlign = "left";
-    divi3_2.style.textAlign = "justify";
-    divi3_2.style.color = "#777777";
-    divi3_2.style.fontFamily = "'nunito'";
-    divi3_2.style.fontWeight = "bold";
-    divi3_2.style.borderStyle = "solid";
-    divi3_2.style.borderColor = "pink";
-
-    divi3_3.style.display = "flex";
-    divi3_3.style.display = "inlinebox";
-    divi3_3.style.marginLeft = "8rem";
-    divi3_3.style.marginRight = "8rem";
-    divi3_3.style.borderStyle = "solid";
-    divi3_3.style.borderColor = "yellow";
-
-    modi.style.color = "#1CB0F6";
-});
-
-//Style para la section 4
-document.querySelectorAll("section4").forEach(function(section4) {
-
-    section4.style.borderStyle = "double";
-    section4.style.display = "flex";
-    section4.style.marginLeft = "5rem";
-    section4.style.marginRight = "5rem";
-    section4.style.overflow = "visible";
-
-    divi4_1.style.display = "flex";
-    divi4_1.style.display = "flex";
-    divi4_1.style.marginLeft = "8rem";
-    divi4_1.style.marginRight = "8rem";
-    divi4_1.style.borderStyle = "solid";
-    divi4_1.style.borderColor = "yellow";
-
-    divi4.style.textAlign = "center";
-    divi4.style.display = "flex";
-    divi4.style.marginLeft = "2rem";
-    divi4.style.borderStyle = "double";
-    divi4.style.borderColor = "orange";
-
-    divi4_2.style.display = "flex";
-    divi4_2.style.fontWeight = "bold";
-    divi4_2.style.fontFamily = "'Feather Bold'";
-    divi4_2.style.color = "#58CC02";
-    divi4_2.style.textAlign = "left";
-    divi4_2.style.fontSize = "3.2rem";
-    divi4_2.style.marginTop = "3.5rem";
-    divi4_2.style.marginLeft = "12.5rem";
-    divi4_2.style.paddingRight = "3rem";
-
-    divi4_3.style.display = "flex";
-    divi4_3.style.marginTop = "-4rem";
-    divi4_3.style.marginLeft = "12.5rem";
-    divi4_3.style.marginRight = "5rem";
-    divi4_3.style.fontSize = "0.9rem";
-    divi4_3.style.textAlign = "left";
-    divi4_3.style.textAlign = "justify";
-    divi4_3.style.color = "#777777";
-    divi4_3.style.fontFamily = "'nunito'";
-    divi4_3.style.fontWeight = "bold";
-    divi4_3.style.borderStyle = "solid";
-    divi4_3.style.borderColor = "pink";
-
-});
-
-//Style para la section 5
-document.querySelectorAll("section5").forEach(function(section5) {
-
-    section5.style.borderStyle = "double";
-    section5.style.display = "flex";
-    section5.style.marginLeft = "5rem";
-    section5.style.marginRight = "5rem";
-    section5.style.overflow = "visible";
-
-    divi5.style.textAlign = "center";
-    divi5.style.display = "flex";
-    divi5.style.marginLeft = "1rem";
-    divi5.style.borderStyle = "double";
-    divi5.style.borderColor = "red";
-
-    divi5_1.style.display = "flex";
-    divi5_1.style.fontWeight = "bold";
-    divi5_1.style.fontFamily = "'Feather Bold'";
-    divi5_1.style.color = "#58CC02";
-    divi5_1.style.textAlign = "left";
-    divi5_1.style.fontSize = "3.5rem";
-    divi5_1.style.marginTop = "3.5rem";
-    divi5_1.style.marginLeft = "3rem";
-    divi5_1.style.paddingRight = "3rem";
-
-    divi5_2.style.display = "flex";
-    divi5_2.style.marginTop = "-4rem";
-    divi5_2.style.marginLeft = "3rem";
-    divi5_2.style.marginRight = "9rem";
-    divi5_2.style.fontSize = "1.2rem";
-    divi5_2.style.textAlign = "left";
-    divi5_2.style.textAlign = "justify";
-    divi5_2.style.color = "#777777";
-    divi5_2.style.fontFamily = "'nunito'";
-    divi5_2.style.fontWeight = "bold";
-    divi5_2.style.borderStyle = "solid";
-    divi5_2.style.borderColor = "pink";
-
-    divi5_3.style.display = "flex";
-    divi5_3.style.display = "inlinebox";
-    divi5_3.style.marginLeft = "8rem";
-    divi5_3.style.marginRight = "8rem";
-    divi5_3.style.borderStyle = "solid";
-    divi5_3.style.borderColor = "yellow";
-
-});
-
-//Style para la section 6
-document.querySelectorAll("section6").forEach(function(section6) {
-
-    section6.style.borderStyle = "double";
-    section6.style.display = "flex";
-    section6.style.marginLeft = "5rem";
-    section6.style.marginRight = "5rem";
-    section6.style.overflow = "visible";
-
-    divi6_1.style.display = "flex";
-    divi6_1.style.display = "flex";
-    divi6_1.style.marginLeft = "8rem";
-    divi6_1.style.marginRight = "8rem";
-    divi6_1.style.borderStyle = "solid";
-    divi6_1.style.borderColor = "yellow";
-
-    divi6.style.textAlign = "center";
-    divi6.style.display = "flex";
-    divi6.style.marginLeft = "2rem";
-    divi6.style.borderStyle = "double";
-    divi6.style.borderColor = "orange";
-
-    divi6_2.style.display = "flex";
-    divi6_2.style.fontWeight = "bold";
-    divi6_2.style.fontFamily = "'Feather Bold'";
-    divi6_2.style.color = "#58CC02";
-    divi6_2.style.textAlign = "left";
-    divi6_2.style.fontSize = "3.2rem";
-    divi6_2.style.marginTop = "3.5rem";
-    divi6_2.style.marginLeft = "12.5rem";
-    divi6_2.style.paddingRight = "3rem";
-
-    divi6_3.style.display = "flex";
-    divi6_3.style.marginTop = "-4rem";
-    divi6_3.style.marginLeft = "12.5rem";
-    divi6_3.style.marginRight = "5rem";
-    divi6_3.style.fontSize = "0.9rem";
-    divi6_3.style.textAlign = "left";
-    divi6_3.style.textAlign = "justify";
-    divi6_3.style.color = "#777777";
-    divi6_3.style.fontFamily = "'nunito'";
-    divi6_3.style.fontWeight = "bold";
-    divi6_3.style.borderStyle = "solid";
-    divi6_3.style.borderColor = "pink";
-
-});
-
-//Style para section 7
-document.querySelectorAll("section7").forEach(function(section7) {
-
-    section7.style.display = "flex";
-    section7.style.overflow = "visible";
-    section7.style.backgroundColor = "#DDF4FF";
-    section7.style.padding = 0; 
-    section7.style.margin =  0;
-
-    divi7.style.marginLeft =  "10rem";
-    divi7.style.borderColor = "red"
-    divi7.style.borderStyle = "solid";
-    divi7.style.marginRight = "10rem";
-
-    divi7_1.style.display = "flex";
-    divi7_1.style.fontSize = "4rem";
-    divi7_1.style.color = "#042C60";
-    divi7_1.style.textAlign = "center";
-    divi7_1.style.fontFamily = "'Feather Bold'";
-    divi7_1.style.marginLeft = "7rem";
-    divi7_1.style.marginRight = "7rem";
-
-    divi7_btn.style.borderStyle = "solid";
-    divi7_btn.style.borderColor = "red";
-    divi7_btn.style.display = "flex";
-    divi7_btn.style.textAlign = "center";
-    divi7_btn.style.marginLeft =  "10rem";
-    divi7_btn.style.marginRight = "10rem";
-    
-
-});
-
-//Style para section 8
-document.querySelectorAll("section8").forEach(function(section8) {
-
-    section8.style.borderStyle = "double";
-    section8.style.display = "flex";
-    section8.style.overflow = "visible";
-    section8.style.backgroundColor = "#100F3E";
-    
-    divi8_1.style.display = "flex";
-    divi8_1.style.display = "flex";
-    divi8_1.style.marginLeft = "8rem";
-    divi8_1.style.marginRight = "5rem";
-    divi8_1.style.borderStyle = "solid";
-    divi8_1.style.borderColor = "yellow";
-
-    divi8.style.textAlign = "center";
-    divi8.style.display = "flex";
-    divi8.style.marginLeft = "10rem";
-    divi8.style.marginRight = "50rem";
-    divi8.style.borderStyle = "double";
-    divi8.style.borderColor = "orange";
-
-    divi8_text.style.borderStyle = "solid";
-    divi8_text.style.borderColor = "pink";
-    divi8_text.style.display = "flex";
-    divi8_text.style.marginTop = "10rem";
-    divi8_text.style.marginLeft =  "16.5rem";
-    divi8_text.style.marginRight = "1rem";
-});
-
-//Style para section 9
-document.querySelectorAll("section9").forEach(function(section9) {
-
-    //section9.style.borderStyle = "double";
-    //section9.style.display = "flex";
-    //section9.style.marginLeft = "5rem";
-    //section9.style.marginRight = "5rem";
-    //section9.style.overflow = "visible";
-
-    //divi9_text.style.textAlign = "center";
-    //divi9_text.style.display = "block";
-    //divi9_text.style.marginLeft = "2rem";
-    //divi9_text.style.borderStyle = "double";
-    //divi9_text.style.borderColor = "orange";
-
-    //divi9_1.style.display = "flex";
-    //divi9_1.style.fontWeight = "bold";
-    //divi9_1.style.fontFamily = "'Feather Bold'";
-    //divi9_1.style.color = "#58CC02";
-    //divi9_1.style.textAlign = "left";
-    //divi9_1.style.fontSize = "3.2rem";
-    //divi9_1.style.marginTop = "3.5rem";
-    //divi9_1.style.marginLeft = "12.5rem";
-    //divi9_1.style.paddingRight = "3rem";
-    //divi9_1.style.display = "block";
-
-    //divi9_2.style.display = "block";
-    //divi9_2.style.borderStyle = "solid";
-    //divi9_2.style.borderColor = "yellow";
-
-    //divi9_3.style.textAlign = "center";
-    //divi9_3.style.display = "flex";
-    //divi9_3.style.marginLeft = "2rem";
-    //divi9_3.style.borderStyle = "double";
-    //divi9_3.style.borderColor = "orange";
-
-
-
-    //divi9_4.style.display = "flex";
-    //divi9_4.style.marginLeft = "12.5rem";
-    //divi9_4.style.marginRight = "5rem";
-    //divi9_4.style.fontSize = "0.9rem";
-    //divi9_4.style.textAlign = "left";
-    //divi9_4.style.textAlign = "justify";
-    //divi9_4.style.color = "#777777";
-    //divi9_4.style.fontFamily = "'nunito'";
-    //divi9_4.style.fontWeight = "bold";
-    //divi9_4.style.borderStyle = "solid";
-    //divi9_4.style.borderColor = "pink";
-
-    section9.style.borderStyle = "double";
-    section9.style.display = "flex";
-    section9.style.marginLeft = "5rem";
-    section9.style.marginRight = "5rem";
-    section9.style.overflow = "visible";
-
-    divi9.style.textAlign = "center";
-    divi9.style.display = "flex";
-    divi9.style.marginLeft = "1rem";
-    divi9.style.borderStyle = "double";
-    divi9.style.borderColor = "red";
-
-    divi9_1.style.display = "flex";
-    divi9_1.style.fontWeight = "bold";
-    divi9_1.style.fontFamily = "'Feather Bold'";
-    divi9_1.style.color = "#58CC02";
-    divi9_1.style.textAlign = "left";
-    divi9_1.style.fontSize = "3.5rem";
-    divi9_1.style.marginTop = "3.5rem";
-    divi9_1.style.marginLeft = "3rem";
-    divi9_1.style.paddingRight = "3rem";
-
-    divi5_2.style.display = "flex";
-    divi5_2.style.marginTop = "-4rem";
-    divi5_2.style.marginLeft = "3rem";
-    divi5_2.style.marginRight = "9rem";
-    divi5_2.style.fontSize = "1.2rem";
-    divi5_2.style.textAlign = "left";
-    divi5_2.style.textAlign = "justify";
-    divi5_2.style.color = "#777777";
-    divi5_2.style.fontFamily = "'nunito'";
-    divi5_2.style.fontWeight = "bold";
-    divi5_2.style.borderStyle = "solid";
-    divi5_2.style.borderColor = "pink";
-
-    divi5_3.style.display = "flex";
-    divi5_3.style.display = "inlinebox";
-    divi5_3.style.marginLeft = "8rem";
-    divi5_3.style.marginRight = "8rem";
-    divi5_3.style.borderStyle = "solid";
-    divi5_3.style.borderColor = "yellow";
-
-});
