@@ -73,3 +73,35 @@ window.addEventListener("scroll", function(){
     }
 });
 
+//Funcion de las banderas
+window.addEventListener('load', function(){
+    new Glider(this.document.querySelector(".carrusel"));
+});
+
+const carrusel = document.getElementById("carrusel");
+const flechaIzq = document.getElementById("flechaIzq");
+const flechader = document.getElementById("flechader");
+
+let posicion = 0;
+
+function moverCarrusel(direccion) {
+    const anchoCarrusel = carrusel.offsetWidth;
+    const cantidadBandera = document.getElementById("banderas").length;
+    const anchoTotal = anchoCarrusel * cantidadBandera;
+
+    if (direccion === "izquierda" && posicion > 0) {
+        posicion -= anchoCarrusel;
+    } else if (direccion === "derecha" && posicion < (anchoTotal - anchoCarrusel)) {
+        posicion += anchoCarrusel;
+    }
+
+    carrusel.style.transform = `translateX(-${posicion}px)`;
+}
+
+flechaIzq.addEventListener("click", function() {
+    moverCarrusel("izquierda");
+});
+
+flechader.addEventListener("click", function() {
+    moverCarrusel("derecha");
+});

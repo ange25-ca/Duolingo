@@ -57,41 +57,41 @@ section.appendChild(divi2);
 var section2 = document.createElement("section2");//Se crea la variable de la primera sección
 section2.setAttribute("id", "section2");
 
-const carrusel = document.createElement("div");
+var carrusel = document.createElement("carrusel");
 carrusel.setAttribute("id", "carrusel");
 
-const banderas = document.createElement("div");
+var banderas = document.createElement("banderas");
 banderas.setAttribute("id", "banderas");
 
-const bandera1 = document.createElement("div"); 
+var bandera1 = document.createElement("bandera1"); 
 bandera1.setAttribute("id", "bandera"); 
 
-const bandera2 = document.createElement("div");
+var bandera2 = document.createElement("bandera2");
 bandera2.setAttribute("id", "bandera");
 
-const bandera3 = document.createElement("div");
+var bandera3 = document.createElement("bandera2");
 bandera3.setAttribute("id", "bandera");
 
-const bandera4 = document.createElement("div");
+var bandera4 = document.createElement("bandera3");
 bandera4.setAttribute("id", "bandera");
 
-const bandera5 = document.createElement("div");
+var bandera5 = document.createElement("bandera4");
 bandera5.setAttribute("id", "bandera");
 
-const bandera6 = document.createElement("div");
+var bandera6 = document.createElement("bandera5");
 bandera6.setAttribute("id", "bandera");
 
-const bandera7 = document.createElement("div");
+var bandera7 = document.createElement("bandera7");
 bandera7.setAttribute("id", "bandera");
 
-const bandera8 = document.createElement("div");
+var bandera8 = document.createElement("bandera8");
 bandera8.setAttribute("id", "bandera");
 
 //Flechas para retroceder y avanzar en el carrusel
-const flechaizq = document.createElement("div");
+var flechaizq = document.createElement("div");
 flechaizq.setAttribute("id", "flechaizq");
 
-const flechader = document.createElement("div");
+var flechader = document.createElement("div");
 flechader.setAttribute("id", "flechader");
 
 //Se agrega a la var banderas en general
@@ -453,17 +453,17 @@ divi2_2.innerHTML = '<button onclik = "reedireccion()" class = btn>EMPIEZA AHORA
 divi2_3.innerHTML = '<button class = btn1>TENGO UNA CUENTA</button>';
 
 //Se agrega el contenido de los div de la segunda section
-bandera1.innerHTML = '<nav><a><svg viewBox="0 0 80 66" fill = "none" style="height: 28.9756px; width: 50px;"><image height="3168" class="ingles" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"</image></svg><span id="inglestext">Inglés</span></a></nav>';
-bandera2.innerHTML = '<nav><a class="frances"><svg viewBox="0 132 82 66" data-test="flag-fr" style="height: 28.9756px; width: 50px;"><image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="francestext">Francés</span></a></nav>';
-bandera3.innerHTML = '<nav><a class="aleman" ><svg viewBox="0 198 82 66" data-test="flag-de" style="height: 28.9756px; width: 50px;"><image height="3168"  width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"</image></svg><span id="alemantext">Alemán</span></a></nav>';
-bandera4.innerHTML = '<nav><a class="italiano"><svg viewBox="0 330 82 66" data-test="flag-it" style="height: 28.9756px; width: 50px;"><image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="italianotext">Italiano</span></a></nav>';
-bandera5.innerHTML = '<nav><a class="portugues" ><svg viewBox="0 594 82 66" data-test="flag-pt" style="height: 28.9756px; width: 50px;"><image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="portutext">Portugués</span></a></nav>';
-bandera6.innerHTML = '<nav><a class="catalan" ><svg viewBox="0 2244 82 66" data-test="flag-ca" style="height: 28.9756px; width: 50px;"><image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="catalantext">Catalán</span></a></nav>';
-bandera7.innerHTML = '<nav><a class="ruso" ><svg viewBox="0 528 82 66" data-test="flag-ru" style="height: 28.9756px; width: 50px;"><image height="3168"  width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="rusotext">Ruso</span></a></nav>';
-bandera8.innerHTML = '<nav><a class="sueco"><svg viewBox="0 792 82 66" data-test="flag-sv" style="height: 28.9756px; width: 50px;"><image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="suecotext">Sueco</span></a></nav>';
+bandera1.innerHTML = '<nav><span><svg viewBox="0 0 80 66" fill = "none" style="height: 28.9756px; width: 50px;"><image height="3168" id="ingles" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"</image></svg><span id="inglestext">Inglés</span></span></nav>';
+bandera2.innerHTML = '<nav><span class="carru1"><svg viewBox="0 132 82 66" data-test="flag-fr" style="height: 28.9756px; width: 50px;"><image id="frances"height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="francestext">Francés</span></span></nav>';
+bandera3.innerHTML = '<nav><span class="carru2" ><svg viewBox="0 198 82 66" data-test="flag-de" style="height: 28.9756px; width: 50px;"><image id="aleman" height="3168"  width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"</image></svg><span id="alemantext">Alemán</span></span></nav>';
+bandera4.innerHTML = '<nav><span class="carru3"><svg viewBox="0 330 82 66" data-test="flag-it" style="height: 28.9756px; width: 50px;"><image id="italiano" height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="italianotext">Italiano</span></span></nav>';
+bandera5.innerHTML = '<nav><span class="carru4" ><svg viewBox="0 594 82 66" data-test="flag-pt" style="height: 28.9756px; width: 50px;"><image id="portugues" height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="portutext">Portugués</span></span></nav>';
+bandera6.innerHTML = '<nav><span class="carru5" ><svg viewBox="0 2244 82 66" data-test="flag-ca" style="height: 28.9756px; width: 50px;"><image id="catalan" height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="catalantext">Catalán</span></span></nav>';
+bandera7.innerHTML = '<nav><span class="carru6" ><svg viewBox="0 528 82 66" data-test="flag-ru" style="height: 28.9756px; width: 50px;"><image id="ruso" height="3168"  width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="rusotext">Ruso</span></span></nav>';
+bandera8.innerHTML = '<nav><span class="carru7"><svg viewBox="0 792 82 66" data-test="flag-sv" style="height: 28.9756px; width: 50px;"><image id="sueco" height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="suecotext">Sueco</span></span></nav>';
 
-flechaizq.innerHTML = '<nav id = "arrow-wreapper"><span class = "arrow-prev"></span>&#10094</nav>';
-flechader.innerHTML = '<nav id = "flechader"><span class = "arrow-nex"></span>&#10095</nav>';
+flechaizq.innerHTML = '<button id = "arrow-wreapper"><span class = "arrow-prev"></span>&#10094</button>';
+flechader.innerHTML = '<button id = "flechader"><span></span>&#10095</button>';
 
 // Se inserta el contenido de los div de la tercera section
 divi3_1.innerHTML = '<p>divertido, efectivo y <br> gratis</p>';

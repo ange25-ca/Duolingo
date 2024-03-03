@@ -139,36 +139,35 @@ document.querySelectorAll(".btn1").forEach(function(btn1) {
 //Style para la section 2
 document.querySelectorAll("section2").forEach(function(section2){
     
-    inglestext.style.color = "#777777";
-    francestext.style.color = "#777777";
-    alemantext.style.color = "#777777";
-    italianotext.style.color = "#777777";
-    francestext.style.color = "#777777";
-    portutext.style.color = "#777777";
-    catalantext.style.color = "#777777";
-    rusotext.style.color = "#777777";
-    suecotext.style.color = "#777777";
+    section2.style.color = "#777777";
 
+   
+    banderas.style.overflow = "hidden";
+    banderas.style.borderStyle = "solid";
+    banderas.style.borderColor = "blue";
     banderas.style.display = "flex";
-    banderas.style.textAlign = "center";
-    banderas.style.alignItems = "center";
-    banderas.style.borderStyle = "double";
-    banderas.style.flexGrow = "1";
-    banderas.style.flexBasis = "0";
-    banderas.style.letterSpacing = "0.001rem";
-    banderas.style.marginLeft = "5rem";
-    banderas.style.marginRight = "5rem";
-    banderas.style.gap = "1.5rem";
+    banderas.style.fontSize = "0.9rem";
+    banderas.style.letterSpacing = "0.1rem";
+    banderas.style.gap = "5rem"; //Separa las banderas
     banderas.style.fontFamily = "nunito";
     banderas.style.fontWeight = "bold";
     banderas.style.textDecoration = "none"; 
-    banderas.style.width = "67.7rem";
-    banderas.style.height = "5rem";
+    banderas.style.height = "5.5rem";
+    banderas.style.width = "72.5rem";
+    banderas.style.whiteSpace = "noweap";
+    banderas.style.alignItems = "center";
+    //banderas.style.boxSizing = "inherit";
 
     flechader.style.color  = "#AFAFAF";
     flechader.style.cursor = "pointer";
+    flechader.style.marginRight = "5rem";
+    flechader.style.position = "hidden";
+
+
+    flechaizq.style.position = "hidden";
     flechaizq.style.color = "#AFAFAF";
     flechaizq.style.cursor = "pointer";
+    flechaizq.style.marginLeft = "5rem";
 
 });
 
