@@ -95,6 +95,14 @@ document.getElementById("divi2_2").addEventListener("click", function() {
   });
 
 document.getElementById("divi2_3").addEventListener("click", function() {
+    var boton6 = this;
+    boton6.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton6.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+  });
+
+document.getElementById("divi2_3").addEventListener("click", function() {
     var boton = this;
     boton.style.transform = "translateY(4px)"; // Hundimiento al hacer click
       setTimeout(function() {
@@ -102,6 +110,13 @@ document.getElementById("divi2_3").addEventListener("click", function() {
       );
   });
 
+document.getElementById("divi8_btn").addEventListener("click", function() {
+    var boton9 = this;
+    boton9.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton9.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+});
 
 document.getElementById("divi9_3").addEventListener("click", function() {
     var boton1 = this;
@@ -134,3 +149,12 @@ document.getElementById("divi12_btn").addEventListener("click", function() {
       boton5.style.transform = "none"; }, 400 //Espera para volver a su estilo
       );
 });
+
+document.getElementById("divi13_btn").addEventListener("click", function() {
+    var boton7 = this;
+    boton7.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton7.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+});
+

@@ -277,11 +277,16 @@ divi8_text.setAttribute("id", "divi8_text")
 var divi8_2 = document.createElement("divi8_2");
 divi8_2.setAttribute("id", "divi8_2");
 
+var divi8_btn = document.createElement("divi8_btn");
+divi8_btn.setAttribute("id", "divi8_btn");
+
 var divi8_3 = document.createElement("divi8_3");
 divi8_3.setAttribute("id", "divi8_3");
 
+divi8_btn.appendChild(divi8_3);
+
 divi8_text.appendChild(divi8_2);
-divi8_text.appendChild(divi8_3);
+divi8_text.appendChild(divi8_btn);
 
 //Se agreg los div al div principal
 divi8.appendChild(divi8_1);
@@ -448,9 +453,11 @@ divi13_btn2.setAttribute("id", "divi13_btn2");
 divi13_btn.appendChild(divi13_btn1);//Se agrego al btn general
 divi13_btn.appendChild(divi13_btn2);
 
+
 //Se agreg los div al div principal
 divi13.appendChild(divi13_1);
 divi13.appendChild(divi13_btn);
+
 
 //Se agrega el div a la seccion
 section13.appendChild(divi13);
@@ -474,22 +481,10 @@ divif_2.setAttribute("id", "divif_2");
 var divif_3 = document.createElement("divif_3");
 divif_3.setAttribute("id", "divif_3");
 
-var divif_4 = document.createElement("divif_4");
-divif_4.setAttribute("id", "divif_4");
-
-var divif_5 = document.createElement("divif_5");
-divif_5.setAttribute("id", "divif_5");
-
-var divif_6 = document.createElement("divif_6");
-divif_6.setAttribute("id", "divif_6");
-
 //Se agrega los div al div principal
 divif_text.appendChild(divif_1);
 divif_text.appendChild(divif_2);
 divif_text.appendChild(divif_3);
-divif_text.appendChild(divif_4);
-divif_text.appendChild(divif_5);
-divif_text.appendChild(divif_6);
 
 divifooter.appendChild(divif_text);
 
@@ -564,7 +559,8 @@ divi7_btn2.innerHTML = '<button class = >TENGO UNA CUENTA</button>';
 
 //Se inserta el contenido de los div de la octava seccion
 divi8_1.innerHTML = '<img height = "500" width = "500" style = textdecoration = "none" src = "CSS/img/superduo.gif">';
-divi8_3.innerHTML = '<nav><a class = "superduo"><img id="SuperDuolingo" height="200" width = "500" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" width="339"></a></nav>';
+divi8_2.innerHTML = '<nav><a class = "superduo"><img id="SuperDuolingo" height="200" width = "450" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" width="339"></a></nav>';
+divi8_3.innerHTML = '<button class = super_btn>prueba 2 semanas gratis</button>';
 
 // Se inserta el contenido de los div de la novena section
 divi9_1.innerHTML = '<p>duolingo english test</p>';
@@ -591,9 +587,8 @@ divi12_3.innerHTML = '<p>¡Prueba nuestras lecciones cortas y gratis para matem�
 divi12_btn.innerHTML = '<button class =btn1>Mejora en matemática</button>';
 
 // Se inserta el contenido de los div de la terceava section
-divi13_1.innerHTML = '<p>aprende idiomas con duolingo</p>';
+divi13_1.innerHTML = '<p>aprende idiomas <br> con duolingo</p>';
 divi13_btn1.innerHTML = '<button class = btn>EMPIEZA AHORA</button>';
-
 
 //Se agrega la informacion del flooter
 divif_1.innerHTML = '<ul><h3>Sobre nosotros</h3><li><a>Cusos</a></li><li><a>Misión</a></li><li><a>Método de enseñanza</a></li><li><a>Eficacia</a></li><li><a>Equipo</a></li><li><a>Investigación</a></li><li><a>Empleo</a></li><li><a>Guía para uso de marcas</a></li><li><a>Tienda</a></li><li><a>Prensa</a></li><li><a>Inversionistas</a></li><li><a>Contáctanos</a></li><ul>';
@@ -601,5 +596,9 @@ divif_1.innerHTML += '<ul><h3>Productos</h3><li><a>Duolingo</a></li><li><a>Duoli
 divif_1.innerHTML += '<ul><h3>Aplicaciones</h3><li><a>Duolingo para Android</a></li><li><a>Duolingo para ¡OS</a></li></ul>';
 divif_1.innerHTML += '<ul><h3>Ayuda y soporte</h3><li><a>App de Dolingo</a></li><li><a>Schools</a></li><li><a>Duoling English Test</a></li><li><a>Estado</a></li></ul>';
 divif_1.innerHTML += '<ul><h3>Términos y <br> privacidad</h3><li><a>Normas de la comunidad</a></li><li><a>Términos</a></li><li><a>Privacidad</a></li><h3>Social</h3><li><a>Blog</a></li><li><a>Instagram</a></li><li><a>Facebook</a></li><li><a>Twitter</a></li><li><a>YouTube</a></li>';
-//divif_1.innerHTML += '<ul><h3>Social</h3><li><a>Blog</a></li><li><a>Instagram</a></li><li><a>Facebook</a></li><li><a>Twitter</a></li><li><a>YouTube</a></li></ul>';
+divif_2.innerHTML = '<ul><h3>Idioma de la página:</h3><ul/>';
+divif_3.innerHTML += '<ul><li>العربية</li><li>বাংলা</li><li>Čeština</li><li>Deutsch</li><li>Ελληνικά</li><li>English</li><li>Español</li><li>Français</li><li>हिंदीMagyar</li><li>Bahasa </li><li>Indonesia</li><li>Italiano</li><li>日本語한국어</li></ul>';
+divif_3.innerHTML += '<ul><li>Nederlands</li><li>Polski</li><li>Português</li><li>Română</li><li>Русский</li><li>తెలుగుภาษาไทย</li><li>Tagalog</li><li>Türkçe</li><li>Українською</li><li>Tiếng Việt</li><li>中文</li></ul>';
+
+
 
