@@ -151,8 +151,11 @@ document.querySelectorAll("section2").forEach(function(section2){
     
     section2.style.color = "#777777";
     section2.style.width = "100%"; 
-    section2.style.marginTop = "3rem";
+    section2.style.marginTop = "1rem";
     section2.style.display = "flex";
+    section2.style.borderStyle = "solid";
+    section2.style.borderColor = "red";
+
 
     banderas.style.overflow = "hidden";
     banderas.style.display = "flex";
@@ -165,8 +168,48 @@ document.querySelectorAll("section2").forEach(function(section2){
     banderas.style.height = "5rem";
     banderas.style.width = "100%";
     banderas.style.whiteSpace = "noweap";
-    banderas.style.alignItems = "baseline";
-    //banderas.style.boxSizing = "inherit";
+    banderas.style.alignItems = "center";
+    banderas.style.borderStyle = "solid";
+
+    bandera1.style.display = "flex";
+    bandera1.style.alignItems = "center";
+    bandera1.style.alignItems = "center";
+    bandera1.style.borderStyle = "solid";
+
+    bandera2.style.display = "flex";
+    bandera2.style.alignItems = "center";
+    bandera2.style.alignItems = "center";
+    bandera2.style.borderStyle = "solid";
+
+    bandera3.style.display = "flex";
+    bandera3.style.alignItems = "center";
+    bandera3.style.alignItems = "center";
+    bandera3.style.borderStyle = "solid";
+
+    bandera4.style.display = "flex";
+    bandera4.style.alignItems = "center";
+    bandera4.style.alignItems = "center";
+    bandera4.style.borderStyle = "solid";
+
+    bandera5.style.display = "flex";
+    bandera5.style.alignItems = "center";
+    bandera5.style.alignItems = "center";
+    bandera5.style.borderStyle = "solid";
+
+    bandera6.style.display = "flex";
+    bandera6.style.alignItems = "center";
+    bandera6.style.alignItems = "center";
+    bandera6.style.borderStyle = "solid";
+    
+    bandera7.style.display = "flex";
+    bandera7.style.alignItems = "center";
+    bandera7.style.alignItems = "center";
+    bandera7.style.borderStyle = "solid";
+
+    bandera8.style.display = "flex";
+    bandera8.style.alignItems = "center";
+    bandera8.style.alignItems = "center";
+    bandera8.style.borderStyle = "solid";
 
     flechader.style.color  = "#AFAFAF";
     flechader.style.cursor = "pointer";
@@ -377,7 +420,7 @@ document.querySelectorAll("section7").forEach(function(section7) {
     divi7_1.style.marginRight = "10rem";
 
     divi7_btn.style.display = "flex";
-    
+
     divi7_btn1.style.display = "flex";
     divi7_btn1.style.textAlign = "center";
     divi7_btn1.style.marginLeft =  "24rem";

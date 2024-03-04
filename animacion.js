@@ -21,7 +21,6 @@ window.addEventListener("scroll", function(){
         nav2.style.marginRight = "9rem";
         nav2.style.marginLeft = "8.1rem";
         nav2.style.marginTop = "0.7rem";
-        nav2.className = "";
         nav2.style.boxSizing = "none";
         nav2.style.textTransform = "uppercase";
         nav2.style.cursor = "pointer";
@@ -30,6 +29,7 @@ window.addEventListener("scroll", function(){
         nav2.style.borderStyle = "none";
         nav2.style.width = "20.7rem";
         nav2.style.height = "2.6rem";
+        navbar.style.borderBottom = "0 solid transparent";
         nav2.style.boxShadow = "0.01rem 0.3rem white";
         //Se agrega la función para el color cuando se posiciona encima del btn
         nav2.addEventListener("mouseover", function(){
