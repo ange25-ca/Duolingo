@@ -19,6 +19,11 @@ var head = document.head ;
 head.appendChild(style);
 
 
+document.querySelectorAll("appContainer").forEach(function(appContainer){
+    appContainer.style.padding = "0";
+    appContainer.style.margin = "0";
+});
+
 //Style para el navbar
 document.querySelectorAll("navbar").forEach(function(navbar){
     
@@ -26,7 +31,7 @@ document.querySelectorAll("navbar").forEach(function(navbar){
     navbar.style.position = "fixed";
     navbar.style.display = "flex";
     navbar.style.top = "0";
-    nav1.style.zindex = "10000";
+    nav1.style.zindex = "10000"; //Se sobreponga 
     navbar.style.width = "100%";
 
     nav.style.height = "5rem";
@@ -524,6 +529,9 @@ document.querySelectorAll("section11").forEach(function(section11) {
     divi11_2.style.textAlign = "justify";
     divi11_2.style.color = "#777777";
     divi11_2.style.fontFamily = "'nunito'";
+
+    divi11_btn.style.display = "flex";
+    divi11_btn.style.marginLeft = "3rem";
     
     divi11_3.style.display = "flex"; //Foto
     divi11_3.style.display = "inlinebox";
@@ -573,3 +581,73 @@ document.querySelectorAll("section12").forEach(function(section12) {
 
 });
 
+document.querySelectorAll("footer").forEach(function(footer){
+    
+    footer.style.backgroundColor = "#58CC02";
+    footer.style.display = "flex";
+    footer.style.justifyContent = "space-around";
+    footer.style.bottom = "0";
+    footer.style.width = "100%";
+
+    divif_text.style.display = "flex";
+    divif_text.style.justifyContent = "space-around";
+    divif_text.style.width = "100%";
+    divif_text.style.display = "flex";
+    
+    divif_1.style.flexWrap = "wrap";
+    divif_1.style.display = "flex";
+    divif_1.style.justifyContent = "space-around";
+    divif_1.style.marginTop = "10rem";
+    divif_1.style.marginLeft = "5rem";
+    divif_1.style.marginRight = "10rem";
+   
+});
+
+divif_1.querySelectorAll("ul").forEach(function(ul) {
+    ul.style.listStyle = "none";
+    ul.style.fontFamily = "nunito";
+    ul.style.fontWeight = "bold";
+    ul.style.color = "#A5ED6E";
+});
+
+divif_1.querySelectorAll("h3").forEach(function(h3){
+    h3.style.color = '#D7FFB8';
+    h3.style.fontSize = "1.2rem";
+
+});
+
+divif_1.querySelectorAll("li").forEach(function(li){
+    li.style.marginBottom = "0.4rem";
+    li.style.fontSize = "0.9rem";
+});
+
+document.querySelectorAll("section13").forEach(function(section13) {
+
+    section13.style.marginTop = "4rem";
+    section13.style.display = "flex";
+    section13.style.overflow = "visible";
+    section13.style.padding = "0.2rem"; 
+    section13.style.backgroundImage = "url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/890eb76de9a395b182c1c28322721405.svg')";
+    section13.style.backgroundRepeat = "no-repeat";
+    section13.style.height = "50rem";
+    //section13.style.borderStyle = "solid";
+    //section13.style.borderColor = "red";
+    section13.style.marginTop = "14rem";
+    
+    divi13.style.marginTop = "30rem";
+
+    divi13_1.style.marginTop = "-30rem";
+    divi13_1.style.marginLeft = "5rem";
+    divi13_1.style.marginRight = "5rem";
+    divi13_1.style.fontSize = "3rem";
+    divi13_1.style.display = "flex";
+    //divi13_1.style.borderStyle = "solid";
+    //divi13_1.style.borderColor = "red";
+
+    divi13.style.fontSize = "4rem";
+    divi13.style.color = "#58CC02";
+    divi13.style.textAlign = "center";
+    divi13.style.fontFamily = "'Feather Bold'";
+    divi13.style.marginLeft = "10rem";
+    divi13.style.marginRight = "10rem";
+});
