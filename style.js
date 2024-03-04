@@ -153,7 +153,6 @@ document.querySelectorAll("section2").forEach(function(section2){
     section2.style.width = "100%"; 
     section2.style.marginTop = "3rem";
     section2.style.display = "flex";
-    
 
     banderas.style.overflow = "hidden";
     banderas.style.display = "flex";
@@ -364,10 +363,9 @@ document.querySelectorAll("section7").forEach(function(section7) {
     section7.style.backgroundSize = "cover";
     section7.style.width = "100%";
     section7.style.height = "70rem";
-
     divi7.style.marginLeft =  "5rem";
     divi7.style.marginRight = "5rem";
-       
+
 
     divi7_1.style.display = "flex";
     divi7_1.style.fontSize = "4rem";
@@ -378,15 +376,50 @@ document.querySelectorAll("section7").forEach(function(section7) {
     divi7_1.style.marginLeft = "10rem";
     divi7_1.style.marginRight = "10rem";
 
-    divi7_btn.style.borderStyle = "solid";
-    divi7_btn.style.borderColor = "red";
     divi7_btn.style.display = "flex";
-    divi7_btn.style.textAlign = "center";
-    divi7_btn.style.marginLeft =  "10rem";
-    divi7_btn.style.marginRight = "10rem";
     
+    divi7_btn1.style.display = "flex";
+    divi7_btn1.style.textAlign = "center";
+    divi7_btn1.style.marginLeft =  "24rem";
+    divi7_btn1.style.fontSize = "0.5rem";
 
+    divi7_btn2.style.display = "flex";
+    divi7_btn2.style.textAlign = "center";
+    divi7_btn2.style.marginLeft =  "2rem";
+    divi7_btn2.style.marginRight = "10rem";
+    divi7_btn2.style.fontSize = "0.5rem";
 });
+
+//Botones de google play Y APP STORE
+document.querySelectorAll(".aprende_btn").forEach(function(aprende_btn) {
+    
+    aprende_btn.style.marginTop = "1rem";
+    aprende_btn.style.display = "flex";
+    aprende_btn.style.fontSize = "1em";
+    aprende_btn.style.fontFamily = "'Feather Bold'";
+    aprende_btn.style.color = "#4B4B4B";
+    aprende_btn.style.textAlign = "center";
+    aprende_btn.style.alignItems = "center";
+    aprende_btn.style.lineHeight = "-10rem";
+    aprende_btn.style.boxSizing = "border-box";
+    aprende_btn.style.cursor = "pointer";
+    aprende_btn.style.backgroundColor = "#ffffff";
+    aprende_btn.style.borderRadius = "0.6rem";
+    aprende_btn.style.borderStyle = "none";
+    aprende_btn.style.width = "10rem";
+    aprende_btn.style.height = "4rem";
+    aprende_btn.style.boxShadow = "0.02rem 0.08rem 0rem 0.11rem #CFCFCF";
+
+    //Se agrega la función para el color cuando se posiciona encima del btn
+    aprende_btn.addEventListener("mouseover", function(){
+        this.style.backgroundColor = "#E5E5E5";
+    });
+    //Se agrega la función para que regrese el color 
+    aprende_btn.addEventListener("mouseout", function() {
+        this.style.backgroundColor = "#ffffff";
+    });
+});
+
 
 //Style para section 8
 document.querySelectorAll("section8").forEach(function(section8) {
@@ -445,7 +478,6 @@ document.querySelectorAll(".super_btn").forEach(function(super_btn) {
         this.style.backgroundColor = "#ffffff";
     });
 });
-
 
 //Style para section 9
 document.querySelectorAll("section9").forEach(function(section9) {

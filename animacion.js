@@ -110,6 +110,14 @@ document.getElementById("divi2_3").addEventListener("click", function() {
       );
   });
 
+document.getElementById("divi7_btn1").addEventListener("click", function(divi7_btn1) {
+    var divi7_btn1 = this;
+    divi7_btn1.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      divi7_btn1.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+});
+
 document.getElementById("divi8_btn").addEventListener("click", function() {
     var boton9 = this;
     boton9.style.transform = "translateY(4px)"; // Hundimiento al hacer click
@@ -157,4 +165,5 @@ document.getElementById("divi13_btn").addEventListener("click", function() {
       boton7.style.transform = "none"; }, 400 //Espera para volver a su estilo
       );
 });
+
 
