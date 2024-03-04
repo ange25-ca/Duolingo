@@ -447,9 +447,9 @@ nav1.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/
 nav2.innerHTML = '<a id = "idioma" href = ""> IDIOMA DE LA PÁGINA: ESPAÑOL <img style = "width: 1rem ; height: 0.8rem;" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/c6eae48dd48246c89e415b89f9e55282.svg"></a>';
 
 //Se ingresa el contenido de los div de la primera section 
-divi1.innerHTML = '<img width="500" height="500" align="center" src= "CSS/img/animation2.gif">'; //Gif de entredo
+divi1.innerHTML = '<img width="500" height="500" src="CSS/img/animation2.gif">'; //Gif de entredo
 divi2_1.innerHTML = '<h1>¡La forma divertida, efectiva y <br> gratis de aprender un idioma!</h1>'; //Texto
-divi2_2.innerHTML = '<button onclik = "reedireccion()" class = btn>EMPIEZA AHORA</button>' ;
+divi2_2.innerHTML = '<button class = btn>EMPIEZA AHORA</button>' ;
 divi2_3.innerHTML = '<button class = btn1>TENGO UNA CUENTA</button>';
 
 //Se agrega el contenido de los div de la segunda section
@@ -468,20 +468,20 @@ flechader.innerHTML = '<button id = "flechader"><span></span>&#10095</button>';
 // Se inserta el contenido de los div de la tercera section
 divi3_1.innerHTML = '<p>divertido, efectivo y <br> gratis</p>';
 divi3_2.innerHTML = '<p>Aprender con Duolingo es divertido y <a id = "modi">los estudios demuestran que funciona.</a>¡En nuestras lecciones cortas ganarás puntos y habilitarás nuevas unidades al mismo tiempo que desarrollas tus habilidades de comunicación en la vida real!</p>';
-divi3_3.innerHTML = '<p>FOTO</p>';
+divi3_3.innerHTML = '<img height = "400" width = "350" src = "CSS/img/divertido_efectivo_gratis.png">';
 
 // Se inserta el contenido de los div de la cuarta section
-divi4_1.innerHTML = '<p>Foto</p>';
+divi4_1.innerHTML = '<img height = "400" width = "400" src = "CSS/img/respaldo_por_la_ciencia.jpg">';
 divi4_2.innerHTML = '<p>respaldado por la ciencia<p>';
 divi4_3.innerHTML = '<p>Gracias a la combinación de métodos de enseñanza respaldados por la ciencia y un contenido entretenido, creamos cursos que enseñan de forma eficiente a leer, escribir, entender y hablar en otros idiomas.</p>';
 
 // Se inserta el contenido de los div de la quinta section
 divi5_1.innerHTML = '<p>mantén tu <br> motivación</p>';
 divi5_2.innerHTML = '<p>Nuestras funcionalidades y desafíos son divertidos y hacen que aprender se sienta como un juego. ¡Vas a poder formar un hábito de aprendizaje sin esfuerzo! Y, por supuesto, recibirás recordatorios de nuestra adorable mascota, Duo, el búho.</p>';
-divi5_3.innerHTML = '<p>FOTO</p>';
+divi5_3.innerHTML = '<img height = "400" width = "400" src = "CSS/img/manten_tu_motivacion.png">';
 
 // Se inserta el contenido de los div de la sexta section
-divi6_1.innerHTML = '<p>Foto</p>';
+divi6_1.innerHTML = '<img height = "400" width = "460" src = "CSS/img/aprendizaje_personalizado.jpg">';
 divi6_2.innerHTML = '<p>aprendizaje personalizado<p>';
 divi6_3.innerHTML = '<p>Al combinar lo mejor de la inteligencia artificial y las ciencias de idiomas, las lecciones se adaptan según tu desempeño para ayudarte a aprender al nivel adecuado y a tu propio ritmo.</p>';
 
@@ -491,30 +491,30 @@ divi7_btn1.innerHTML = '<button class = >TENGO UNA CUENTA</button>';
 divi7_btn2.innerHTML = '<button class = >TENGO UNA CUENTA</button>';
 
 //Se inserta el contenido de los div de la octava seccion
-divi8_1.innerHTML = '<p>FOTO</p>';
-divi8_3.innerHTML = '<nav><a class = "superduo"><img id="SuperDuolingo" height="55" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" width="339"></a></nav>';
+divi8_1.innerHTML = '<img height = "500" width = "500" style = textdecoration = "none" src = "CSS/img/superduo.gif">';
+divi8_3.innerHTML = '<nav><a class = "superduo"><img id="SuperDuolingo" height="200" width = "500" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" width="339"></a></nav>';
 
 // Se inserta el contenido de los div de la novena section
 divi9_1.innerHTML = '<p>duolingo english test</p>';
 divi9_2.innerHTML = '<p>Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en la ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el examen y que puedan dar lo mejor de sí.</p>';
-divi9_3.innerHTML = '<p>button</p>';
-divi9_4.innerHTML = '<p>Imagen</p>';
+divi9_3.innerHTML = '<button class = btn1>Certifica tu inglés</button>';
+divi9_4.innerHTML = '<img height = "450" width = "400" src = "CSS/img/duolingo_english_test.jpg">';
 
 //Se inserta el contenido de la decima section
-divi10_1.innerHTML = '<p>Foto</p>';
+divi10_1.innerHTML = '<img height = "450" width = "450" src = "CSS/img/duolingo_for_schools.png">';
 divi10_2.innerHTML = '<p>duolingo for schools<p>';
 divi10_3.innerHTML = '<p>Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.</p>';
-divi10_btn.innerHTML = '<p>BOTÓN</p>';
+divi10_btn.innerHTML = '<button class = btn1>Potencia tu salón de clases</button>';
 
 // Se inserta el contenido de los div de la onceava section
 divi11_1.innerHTML = '<p>duolingo abc</p>';
 divi11_2.innerHTML = '<p>¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética y cuentos divertidos, Duolingo ABC enseña a niños y niñas de entre 3 y 8 años a leer y escribir… ¡y es totalmente gratis!</p>';
-divi11_btn.innerHTML = '<p>BOTÓN</p>';
-divi11_3.innerHTML = '<p>FOTO</p>';
+divi11_btn.innerHTML = '<button class = btn1>Conoce duolingo ABC</button>';
+divi11_3.innerHTML = '<img height = "350" width = "350" src = "CSS/img/duolingo_abc.jpg">';
 
 //Se inserta el contenido de los div de la doceava section
-divi12_1.innerHTML = '<p>Foto</p>';
-divi12_2.innerHTML = '<p>duolingo for schools<p>';
-divi12_3.innerHTML = '<p>Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.</p>';
-divi12_btn.innerHTML = '<p>BOTÓN</p>';
+divi12_1.innerHTML = '<img height = "450" width = "450" src = "CSS/img/duolingo_math.jpg">';
+divi12_2.innerHTML = '<p>duolingo math<p>';
+divi12_3.innerHTML = '<p>¡Prueba nuestras lecciones cortas y gratis para matemáticas! Con Duolingo Math, los estudiantes podrán adelantarse en sus clases de matemáticas y los adultos podrán practicar para mejorar su destreza matemática.<p>';
+divi12_btn.innerHTML = '<button class = btn1>Mejora en matemática</button>';
 

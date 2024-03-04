@@ -5,7 +5,7 @@ let $navbar = document.querySelector("navbar");
 
 window.addEventListener("scroll", function(){
     let ubicacionActual = window.scrollY;
-    if( ubicacionActual >= 2000 && ubicacionActual <= 3100){
+    if( ubicacionActual >= 2500 && ubicacionActual <= 4800){
         $navbar.style.top = "-80px";
 
     } else if (ubicacionActual == 0){
@@ -68,6 +68,14 @@ window.addEventListener("scroll", function(){
         nav2.addEventListener("mouseout", function() {
             this.style.backgroundColor = "#58CC02";
         });
+        //Efecto del botón
+        document.getElementById("nav2").addEventListener("click", function() {
+            var boton = this;
+            boton.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+              setTimeout(function() {
+              boton.style.transform = "none"; }, 400 //Espera para volver a su estilo
+              );
+          });
 
     ubicacionPrincipal = ubicacionActual;
     }
@@ -78,30 +86,51 @@ window.addEventListener('load', function(){
     new Glider(this.document.querySelector(".carrusel"));
 });
 
-const carrusel = document.getElementById("carrusel");
-const flechaIzq = document.getElementById("flechaIzq");
-const flechader = document.getElementById("flechader");
+document.getElementById("divi2_2").addEventListener("click", function() {
+    var boton = this;
+    boton.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+  });
 
-let posicion = 0;
+document.getElementById("divi2_3").addEventListener("click", function() {
+    var boton = this;
+    boton.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+  });
 
-function moverCarrusel(direccion) {
-    const anchoCarrusel = carrusel.offsetWidth;
-    const cantidadBandera = document.getElementById("banderas").length;
-    const anchoTotal = anchoCarrusel * cantidadBandera;
 
-    if (direccion === "izquierda" && posicion > 0) {
-        posicion -= anchoCarrusel;
-    } else if (direccion === "derecha" && posicion < (anchoTotal - anchoCarrusel)) {
-        posicion += anchoCarrusel;
-    }
-
-    carrusel.style.transform = `translateX(-${posicion}px)`;
-}
-
-flechaIzq.addEventListener("click", function() {
-    moverCarrusel("izquierda");
+document.getElementById("divi9_3").addEventListener("click", function() {
+    var boton1 = this;
+    boton1.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton1.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
 });
 
-flechader.addEventListener("click", function() {
-    moverCarrusel("derecha");
+document.getElementById("divi10_btn").addEventListener("click", function() {
+    var boton2 = this;
+    boton2.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton2.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+});
+
+document.getElementById("divi11_btn").addEventListener("click", function() {
+    var boton3 = this;
+    boton3.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton3.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
+});
+
+document.getElementById("divi12_btn").addEventListener("click", function() {
+    var boton5 = this;
+    boton5.style.transform = "translateY(4px)"; // Hundimiento al hacer click
+      setTimeout(function() {
+      boton5.style.transform = "none"; }, 400 //Espera para volver a su estilo
+      );
 });
