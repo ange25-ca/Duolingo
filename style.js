@@ -19,9 +19,10 @@ var head = document.head ;
 head.appendChild(style);
 
 
-document.querySelectorAll("appContainer").forEach(function(appContainer){
-    appContainer.style.padding = "0";
-    appContainer.style.margin = "0";
+document.querySelectorAll("app").forEach(function(app){
+    app.style.padding = "0";
+    app.style.margin = "0";
+    appContainer.style.width = "100%";
 });
 
 //Style para el navbar
@@ -73,6 +74,8 @@ document.querySelectorAll("section").forEach(function(section){
     
 
     divi1.style.display = "flex";
+    divi1.style.Width = "100%";
+    divi1.style.height = "auto";
 
     divi2.style.textAlign = "center";
     divi2.style.marginLeft = "1.5rem";
@@ -153,10 +156,10 @@ document.querySelectorAll("section2").forEach(function(section2){
     section2.style.width = "100%"; 
     section2.style.marginTop = "1rem";
     section2.style.display = "flex";
-    section2.style.borderStyle = "solid";
-    section2.style.borderColor = "red";
 
-
+    banderas.style.objectFit = "cover";
+    banderas.style.transition = "0.5s ease-in-out";
+    banderas.style.scrollSnapAlign = "start";
     banderas.style.overflow = "hidden";
     banderas.style.display = "flex";
     banderas.style.fontSize = "0.9rem";
@@ -167,55 +170,13 @@ document.querySelectorAll("section2").forEach(function(section2){
     banderas.style.textDecoration = "none"; 
     banderas.style.height = "5rem";
     banderas.style.width = "100%";
-    banderas.style.whiteSpace = "noweap";
     banderas.style.alignItems = "center";
-    banderas.style.borderStyle = "solid";
+    banderas.style.borderBottom = "0.1rem solid #E5E5E5"; 
+    banderas.style.borderTop = "0.1rem solid #E5E5E5";
 
-    bandera1.style.display = "flex";
-    bandera1.style.alignItems = "center";
-    bandera1.style.alignItems = "center";
-    bandera1.style.borderStyle = "solid";
-
-    bandera2.style.display = "flex";
-    bandera2.style.alignItems = "center";
-    bandera2.style.alignItems = "center";
-    bandera2.style.borderStyle = "solid";
-
-    bandera3.style.display = "flex";
-    bandera3.style.alignItems = "center";
-    bandera3.style.alignItems = "center";
-    bandera3.style.borderStyle = "solid";
-
-    bandera4.style.display = "flex";
-    bandera4.style.alignItems = "center";
-    bandera4.style.alignItems = "center";
-    bandera4.style.borderStyle = "solid";
-
-    bandera5.style.display = "flex";
-    bandera5.style.alignItems = "center";
-    bandera5.style.alignItems = "center";
-    bandera5.style.borderStyle = "solid";
-
-    bandera6.style.display = "flex";
-    bandera6.style.alignItems = "center";
-    bandera6.style.alignItems = "center";
-    bandera6.style.borderStyle = "solid";
-    
-    bandera7.style.display = "flex";
-    bandera7.style.alignItems = "center";
-    bandera7.style.alignItems = "center";
-    bandera7.style.borderStyle = "solid";
-
-    bandera8.style.display = "flex";
-    bandera8.style.alignItems = "center";
-    bandera8.style.alignItems = "center";
-    bandera8.style.borderStyle = "solid";
-
-    flechader.style.color  = "#AFAFAF";
     flechader.style.cursor = "pointer";
     flechader.style.marginRight = "5rem";
     flechader.style.position = "hidden";
-
 
     flechaizq.style.position = "hidden";
     flechaizq.style.color = "#AFAFAF";
@@ -399,16 +360,16 @@ document.querySelectorAll("section7").forEach(function(section7) {
 
     section7.style.marginTop = "4rem";
     section7.style.display = "flex";
-    section7.style.overflow = "visible";
+   // section7.style.overflow = "visible";
     section7.style.backgroundColor = "#DDF4FF";
-    section7.style.padding = "0.2rem"; 
     section7.style.backgroundImage = "url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg')";
-    section7.style.backgroundSize = "cover";
+    section7.style.backgroundSize = "100%";
     section7.style.width = "100%";
     section7.style.height = "70rem";
+    section7.style.margin = "0";
+
     divi7.style.marginLeft =  "5rem";
     divi7.style.marginRight = "5rem";
-
 
     divi7_1.style.display = "flex";
     divi7_1.style.fontSize = "4rem";
@@ -470,9 +431,9 @@ document.querySelectorAll("section8").forEach(function(section8) {
     section8.style.display = "flex";
     section8.style.overflow = "visible";
     section8.style.backgroundColor = "#00083A";
-    section8.style.backgroundSize = "cover";
     section8.style.width = "100%";
     section8.style.height = "60rem";
+    section8.style.margin = "0";
 
     divi8.style.display = "flex";
     divi8.style.marginLeft = "5rem";
@@ -493,6 +454,7 @@ document.querySelectorAll("section8").forEach(function(section8) {
     divi8_btn.style.marginTop = "-1rem";
     divi8_btn.style.marginLeft = "5rem";
 });
+
 
 document.querySelectorAll(".super_btn").forEach(function(super_btn) {
 
@@ -800,3 +762,4 @@ divif_3.querySelectorAll("li").forEach(function(li){
     li.style.fontSize = "0.8rem";
     li.style.display = "inline-block"
 });
+

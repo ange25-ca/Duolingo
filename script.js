@@ -529,8 +529,8 @@ bandera6.innerHTML = '<nav><span class="carru5" ><svg viewBox="0 2244 82 66" dat
 bandera7.innerHTML = '<nav><span class="carru6" ><svg viewBox="0 528 82 66" data-test="flag-ru" style="height: 28.9756px; width: 50px;"><image id="ruso" height="3168"  width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="rusotext">Ruso</span></span></nav>';
 bandera8.innerHTML = '<nav><span class="carru7"><svg viewBox="0 792 82 66" data-test="flag-sv" style="height: 28.9756px; width: 50px;"><image id="sueco" height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image></svg><span id="suecotext">Sueco</span></span></nav>';
 
-flechaizq.innerHTML = '<button id = "arrow-wreapper"><span class = "arrow-prev"></span>&#10094</button>';
-flechader.innerHTML = '<button id = "flechader"><span></span>&#10095</button>';
+flechaizq.innerHTML = '<a id = "arrow-wreapper" onclick = "moveCarousel(-1)"><span class = "arrow-prev"></span>&#10094</a>';
+flechader.innerHTML = '<a id = "flechader" onclik = "moveCarousel(1)"><span></span>&#10095</a>'; 
 
 // Se inserta el contenido de los div de la tercera section
 divi3_1.innerHTML = '<p>divertido, efectivo y <br> gratis</p>';

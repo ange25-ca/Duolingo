@@ -82,9 +82,9 @@ window.addEventListener("scroll", function(){
 });
 
 //Funcion de las banderas
-window.addEventListener('load', function(){
-    new Glider(this.document.querySelector(".carrusel"));
-});
+//window.addEventListener('load', function(){
+   // new Glider(this.document.querySelector(".carrusel"));
+//});
 
 document.getElementById("divi2_2").addEventListener("click", function() {
     var boton = this;
@@ -173,3 +173,23 @@ document.getElementById("divi7_btn2").addEventListener("click", function() {
       boton9.style.transform = "none"; }, 400 //Espera para volver a su estilo
       );
 });
+
+function App(){
+    window.onload = function(event) {
+        var app = new App();
+        window.app = app;
+    }
+
+    App.prototype.processingButton = function(event){
+
+        const btn = event.currentTarget;
+        const baderas = event.currentTarget.parentNode;
+        const track = event.currentTarget.parentNode.querySelector("banderas");
+        const carrusel = banderas.querySelector("carrusel");
+
+        const carruselWidth = carrusel[0].offsetWidth;
+        const banderasWidth = carrusel.offsetWidth;
+
+        banderas.style.left == ""? leftPosition = banderas.left = 0: leftPosition;
+    }
+}
