@@ -174,22 +174,3 @@ document.getElementById("divi7_btn2").addEventListener("click", function() {
       );
 });
 
-function App(){
-    window.onload = function(event) {
-        var app = new App();
-        window.app = app;
-    }
-
-    App.prototype.processingButton = function(event){
-
-        const btn = event.currentTarget;
-        const baderas = event.currentTarget.parentNode;
-        const track = event.currentTarget.parentNode.querySelector("banderas");
-        const carrusel = banderas.querySelector("carrusel");
-
-        const carruselWidth = carrusel[0].offsetWidth;
-        const banderasWidth = carrusel.offsetWidth;
-
-        banderas.style.left == ""? leftPosition = banderas.left = 0: leftPosition;
-    }
-}

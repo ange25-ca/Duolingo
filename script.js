@@ -510,11 +510,11 @@ appContainer.appendChild(section13);
 appContainer.appendChild(footer);
 
 //Se ingresa el contenido de los div del navbar
-nav1.innerHTML = '<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg">';
+nav1.innerHTML = '<img id="gif" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg">';
 nav2.innerHTML = '<a id = "idioma" href = ""> IDIOMA DE LA PÁGINA: ESPAÑOL <img style = "width: 1rem ; height: 0.8rem;" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/c6eae48dd48246c89e415b89f9e55282.svg"></a>';
 
 //Se ingresa el contenido de los div de la primera section 
-divi1.innerHTML = '<img width="500" height="500" src="CSS/img/animation2.gif">'; //Gif de entredo
+divi1.innerHTML = '<img id = "animation2" width="500" height="500" src="CSS/img/animation2.gif">'; //Gif de entredo
 divi2_1.innerHTML = '<h1>¡La forma divertida, efectiva y <br> gratis de aprender un idioma!</h1>'; //Texto
 divi2_2.innerHTML = '<button class = btn>EMPIEZA AHORA</button>' ;
 divi2_3.innerHTML = '<button class = btn1>TENGO UNA CUENTA</button>';
